@@ -3,14 +3,15 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image, ImageOps
 
+# Load the trained model with Streamlit's caching
+@st.cache_resource
+def load_model():
+    return tf.keras.models.load_model('digit_classifier.h5')
+
 class DigitClassifierApp:
     def __init__(self):
-        self.model = self.load_model()
-
-    # Load the trained model with Streamlit's caching
-    @st.cache_resource
-    def load_model(self):
-        return tf.keras.models.load_model('digit_classifier.h5')
+        # Call the cached load_model function
+        self.model = load_model()
 
     # Preprocess the uploaded image
     def preprocess_image(self, image):
