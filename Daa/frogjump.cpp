@@ -31,12 +31,12 @@ int frog_jump(int arr[] , int n){
 
 int main(){
         int stones1[] = {0,1,3,5,6,8,12,17};
-    int n1 = sizeof(stones1) / sizeof(stones1[0]);
+    int n1 = 8;
     cout << "Can the frog cross eg1 ? : " << (frog_jump(stones1, n1) ? "Yes" : "No") << endl;
 
 
     int stones2[] = {0, 1, 2, 3, 4, 8, 9, 11};
-    int n2 = sizeof(stones2) / sizeof(stones2[0]);
+    int n2 = 8 ;
     cout << "Can the frog cross  eg2 : " << (frog_jump(stones2, n2) ? "Yes" : "No") << endl;
 
 }
