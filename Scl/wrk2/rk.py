@@ -9,7 +9,7 @@ function = sp.sympify(function)
 def f(fun,x0,y0):
     return fun.subs({x:x0 , y:y0}).evalf()
 
-def rk4(fun , c_x , c_y , h , x_predict):
+def rk(fun , c_x , c_y , h , x_predict):
     x0, y0 = c_x , c_y
     
     # Calculate the Runge-Kutta terms
@@ -22,5 +22,5 @@ def rk4(fun , c_x , c_y , h , x_predict):
     result = y0 + (1 / 6) * (k1 + 4 * k2 + k3)
     return result
 
-print(rk4(function, 0 , 1 , 0.2 , 0.2))
+print(rk(function, 0 , 1 , 0.2 , 0.2))
         
