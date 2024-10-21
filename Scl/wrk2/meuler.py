@@ -9,7 +9,7 @@ def f(fun , x_val , y_val):
     return fun.subs({x:x_val,y:y_val}).evalf()
 
 def modified_euler(fun , c_x , c_y , h , x_predict , tol = 0.001):
-    x0 = c_x - h
+    x0 = x_predict - h
     y0 = c_y if x_predict == h else modified_euler(fun , c_x , c_y , h , x0)
     
     y1 = y0 + h * f(fun , x0 ,y0)
