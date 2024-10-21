@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.util.*;
 
 public class PhoneBookApp {
@@ -58,7 +57,7 @@ public class PhoneBookApp {
         // Create JFrame
         JFrame frame = new JFrame("PhoneBook Application");
         frame.setSize(400, 400);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new FlowLayout());
 
         // Create components
@@ -84,6 +83,7 @@ public class PhoneBookApp {
         frame.add(editButton);
         frame.add(sortButton);
         frame.add(new JScrollPane(displayArea));
+
 
         // Add button listeners
         addButton.addActionListener(e -> {
