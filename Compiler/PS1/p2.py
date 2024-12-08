@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
-class Html:
+class ParseHtml:
     def __init__(self,filepath):
         self.file = filepath
 
@@ -48,7 +48,7 @@ class Html:
 filepath = 'index.html'
 url = "https://www.geeksforgeeks.org/how-to-automate-an-excel-sheet-in-python/?ref=feed"
 
-data = Html(filepath)
+data = ParseHtml(filepath)
 data.scrapeHtml(url)
 data.readHtml()
 data.removeTags()
