@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowPosition(80, 80);
-    glutCreateWindow("Circle");
+    glutCreateWindow("Parabola");
     glutDisplayFunc(display);
     init();
     glutMainLoop();
