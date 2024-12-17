@@ -83,7 +83,7 @@ class Tokens:
             keyword = file.read()
         keyword = keyword.splitlines()
             
-        words = token.split(' ')  
+        words = token.replace(';', ' ; ').replace(',', ' , ').split()  
         
         for i in words:
             if i in keyword:
