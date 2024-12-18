@@ -125,14 +125,19 @@ class Tokens:
                         self.errors.append(f"Error: Strange character '{i}' at line {line_no}")
 
     def display(self):
-        print("Tokens:", self.tokens)
-        print("Errors:", self.errors)
-
-
-
-c = Tokens('main.c', 'main.c')
-c.removeMacros()
-c.removeComments()
-c.addLineNumber()
-c.identifyTokens('CKeyword.txt')
-c.display()
+        
+        for token , value in self.tokens.items():
+            print(f"{token} : {value}")
+        
+        for error in self.errors:
+            print(f"{error}")
+def main():
+    c = Tokens('main.c', 'main.c')
+    c.removeMacros()
+    c.removeComments()
+    c.addLineNumber()
+    c.identifyTokens('CKeyword.txt')
+    c.display()
+    
+if __name__ == '__main__':
+    main()
