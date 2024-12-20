@@ -9,8 +9,8 @@ class Parse:
         flag = True
         newLines = []
         for i in lines:
-            if '//' in i :
-                continue
+            if '//' in i:
+                flag = False
             if '/*' in i:
                 flag = False
             
