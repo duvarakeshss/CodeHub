@@ -42,7 +42,6 @@ int main(int argc, char **argv) {
 
     fclose(file);
 
-    // Print the results
     printf("Alphabets: %d\n", alpCount);
     printf("Digits: %d\n", digitCount);
     printf("Spaces: %d\n", spaceCount);
