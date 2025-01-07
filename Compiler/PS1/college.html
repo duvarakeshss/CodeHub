@@ -1,0 +1,2570 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="zxx" style=""><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PSG College of Technology</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="images/psgicon.ico">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <style>
+        .awNotices {
+            position: relative;
+            color: white;
+            font: 400 12px Arial;
+
+            a {
+                padding: 8px 25px 8px 10px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                color: inherit;
+                text-decoration: none;
+                visibility: hidden;
+                transition: opacity .6s;
+                border-radius: 3px;
+                text-shadow: 0 0 3px rgba(1, 1, 1, .3);
+                line-height: 150%;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                -webkit-transform-style:preserve-3d;
+                -moz-transform-style:preserve-3d;
+                transform-style:preserve-3d
+
+                i.fa {
+                    padding-right: 8px;
+                    margin-right: 5px;
+                    border-right: 1px solid rgba(255, 255, 255, .2);
+                }
+            }
+
+            a[notice-color="orange"] {
+                background-color: #ff9800;
+            }
+
+            a[notice-color="red"] {
+                background-color: #e51c23;
+            }
+
+            a[notice-color="blue"] {
+                background-color: #3f51b5;
+            }
+
+            a[notice-color="green"] {
+                background-color: #8bc34a;
+            }
+
+            a[notice-color="dark"] {
+                background-color: #414141;
+            }
+
+            a.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            span.controller {
+                position: absolute;
+                cursor: pointer;
+                background: transparent;
+                right: 0;
+                padding: 8px 10px;
+                line-height: 150%;
+            }
+        }
+    </style>
+
+    <style>
+        /*
+*,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td {
+    margin: 0;
+    padding: 0;
+}
+
+article,aside,figure,footer,header,hgroup,nav,section {
+    display: block;
+} */
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: #2B4BAB;
+            a text-decoration: none;
+        }
+
+        a:hover {
+            color: #2B4BAB;
+        }
+
+        /*
+body {
+    background: #e5e5e5;
+    color: #374147;
+    font: 14px "Open Sans",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    width: 100%;
+} */
+
+        .nvmenu {
+            display: block;
+            /* background: #2B4BAB;*/
+            text-align: right;
+            background: transparent;
+        }
+
+        .menu {
+            display: block;
+            text-align: right;
+        }
+
+        .menu li {
+            display: inline-block;
+            position: relative;
+            z-index: 100;
+        }
+
+        .menu li:first-child {
+            margin-left: 0;
+        }
+
+        .menu li a {
+            /* font: 400 14px/40px 'Open Sans', Arial, Helvetica, sans-serif; */
+            font: 400 13px/21px 'Open Sans', Arial, Helvetica, sans-serif;
+            */
+            /* font-weight: 600; */
+            text-decoration: none;
+            padding: 10px 10px;
+            display: block;
+            color: #fff;
+            transition: all 0.2s ease-in-out 0s;
+        }
+
+        .menu li a:hover,
+        .menu li:hover>a {
+            color: #fff;
+            background: #9ca3da;
+        }
+
+        .menu ul {
+            visibility: hidden;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            width: 170px;
+            position: absolute;
+            left: 0px;
+            background: #fff;
+            z-index: 99;
+            transform: translate(0, 20px);
+            transition: all 0.2s ease-out;
+        }
+
+        .menu ul:after {
+            bottom: 100%;
+            left: 20%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #fff;
+            border-width: 6px;
+            margin-left: -6px;
+        }
+
+        .menu ul li {
+            display: block;
+            float: none;
+            background: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li a {
+            font-size: 12px;
+            font-weight: normal;
+            display: block;
+            color: #797979;
+            background: #fff;
+        }
+
+        .menu ul li a:hover,
+        .menu ul li:hover>a {
+            background: #9ca3da;
+            color: #fff;
+        }
+
+        .menu li:hover>ul {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        .menu ul ul {
+            left: 169px;
+            top: 0px;
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(20px, 20px);
+            transition: all 0.2s ease-out;
+        }
+
+        .menu ul ul:after {
+            left: -6px;
+            top: 10%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #fff;
+            border-width: 6px;
+            margin-top: -6px;
+        }
+
+        .menu li>ul ul:hover {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        .responsive-menu {
+            text-align: right;
+            font: 400 13px/21px 'Open Sans', Arial, Helvetica, sans-serif;
+            /* font: 400 14px/40px 'Open Sans', Arial, Helvetica, sans-serif; */
+            display: none;
+            width: 100%;
+            padding: 10px 15px;
+            /* background: #2B4BAB; */
+            color: #fff;
+            /* text-transform: uppercase; */
+            font-weight: 600;
+        }
+
+        .responsive-menu:hover {
+            background: #2B4BAB;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a.homer {
+            background: #9ca3da;
+        }
+
+        @media (min-width: 768px) and (max-width: 979px) {
+            .mainWrap {
+                width: 768px;
+            }
+
+            .menu ul {
+                top: 37px;
+            }
+
+            .menu li a {
+                font-size: 12px;
+            }
+
+            a.homer {
+                background: #374147;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .mainWrap {
+                width: auto;
+                padding: 50px 20px;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .responsive-menu {
+                display: block;
+            }
+
+            nav {
+                margin: 0;
+                background: none;
+            }
+
+            .menu li {
+                display: block;
+                margin: 0;
+            }
+
+            .menu li a {
+                background: #fff;
+                color: #797979;
+            }
+
+            .menu li a:hover,
+            .menu li:hover>a {
+                background: #9ca3da;
+                color: #fff;
+            }
+
+            .menu ul {
+                visibility: hidden;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+                transform: initial;
+            }
+
+            .menu li:hover>ul {
+                visibility: visible;
+                opacity: 1;
+                position: relative;
+                transform: initial;
+            }
+
+            .menu ul ul {
+                left: 0;
+                transform: initial;
+            }
+
+            .menu li>ul ul:hover {
+                transform: initial;
+            }
+        }
+
+        @media (max-width: 480px) {}
+
+        @media (max-width: 320px) {}
+    </style>
+
+    <style>
+        .Goutham_Campus_View {
+            position: relative;
+            background: linear-gradient(90deg, #ff0000, #fff, #ff0000);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: animate 3s linear infinite;
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: rgb(255 255 255 / 55%);
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: -500%;
+            }
+
+            100% {
+                background-position: 500%;
+            }
+        }
+    </style>
+
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-987N7XWC78"></script><script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-987N7XWC78'); </script></head>
+ <!-- Google tag (gtag.js) -->
+
+
+<!-- Google tag (gtag.js) -->
+
+
+
+<body class="tg-home tg-homeone">
+    <div id="tg-wrapper" class="tg-wrapper">
+        <header id="tg-header" class="tg-header tg-headervtwo tg-haslayout">
+
+            <div class="tg-topbar">
+                <div class="tg-leftbox">
+                    <div class="tg-tickerbox"> <span>News:</span>
+                        <div id="tg-ticker" class="tg-ticker owl-carousel owl-loaded owl-drag">
+
+                            
+                                    
+
+                                    
+                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-712px, 0px, 0px); transition: all; width: 1780px;"><div class="owl-item cloned" style="width: 356px;"><section class="awNotices">
+
+                                        <p>
+                                            <strong><a href="https://psgtech.edu/distinalumni/" class="active"><font color="#f4de88" size="2.5px">PSG Tech Distinguished Alumni Nomination </font></a></strong>                                        </p>
+
+                                    </section></div><div class="owl-item cloned" style="width: 356px;"><section class="awNotices">
+
+                                        <p>
+                                            <strong><a href="https://psgtech.edu/distinalumni/" class="active"><font color="#f4de88" size="2.5px">PSG Tech Distinguished Alumni Nomination </font></a></strong>                                        </p>
+
+                                    </section></div><div class="owl-item active" style="width: 356px;"><section class="awNotices">
+
+                                        <p>
+                                            <strong><a href="https://psgtech.edu/distinalumni/" class="active"><font color="#f4de88" size="2.5px">PSG Tech Distinguished Alumni Nomination </font></a></strong>                                        </p>
+
+                                    </section></div><div class="owl-item cloned" style="width: 356px;"><section class="awNotices">
+
+                                        <p>
+                                            <strong><a href="https://psgtech.edu/distinalumni/" class="active"><font color="#f4de88" size="2.5px">PSG Tech Distinguished Alumni Nomination </font></a></strong>                                        </p>
+
+                                    </section></div><div class="owl-item cloned" style="width: 356px;"><section class="awNotices">
+
+                                        <p>
+                                            <strong><a href="https://psgtech.edu/distinalumni/" class="active"><font color="#f4de88" size="2.5px">PSG Tech Distinguished Alumni Nomination </font></a></strong>                                        </p>
+
+                                    </section></div></div></div><div class="owl-nav disabled"><div class="tg-btnsquareprev tg-btnprev"><i class="fa fa-angle-left"></i></div><div class="tg-btnsquarenext tg-btnnext"><i class="fa fa-angle-right"></i></div></div><div class="owl-dots disabled"></div></div>
+                    </div>
+                </div>
+                <br>
+
+                <!-- <div class="tg-rightbox ">
+      <span class="tg-rtltextbox">
+  -->
+                <nav class="nvmenu">
+                    <a id="resp-menu" class="responsive-menu" href="#" style="color: white;"><i class="fa fa-reorder"></i> PSG Mail</a>
+                    <ul class="menu">
+                       
+                        <li><a class="Goutham_Campus_View" href="files/Campus-Map.jpg" target="_blank" style="background-color: #2B4BAB;color: white;text-align: left;">Campus Map</a>
+                        </li>
+                        <!-- <li>
+                            <a class="Goutham_Campus_View" href="files/Campus-Map.jpg" target="_blank" 
+                            style="background-color: #2B4BAB;color: white;text-align: left;"></a>
+                        </li> -->
+                        <li><a class="homer" href="https://mail.google.com/a/psgtech.ac.in" target="_blank" style="background-color: #2B4BAB;color: white;text-align: left;">Mail</a>
+                        </li>
+                        <li><a href="student.php" style="background-color: #2B4BAB;color: white;text-align: left;">Students</a></li>
+                        <li><a href="parentzone.php" style="background-color: #2B4BAB;color: white;text-align: left;">Parents</a>
+                        </li>
+                        <li><a href="#" style="background-color: #2B4BAB;color: white;text-align: left;">Alumni</a>
+                            <ul class="sub-menuu">
+                                <li><a href="https://laudea.psgtech.ac.in/alumni/" style="background-color: #2B4BAB;color: white;text-align: left;">Alumni
+                                        Albums</a></li>
+                                <li><a href="https://alumni.psgtech.ac.in/" style="background-color: #2B4BAB;color: white;text-align: left;">Alumni
+                                        Association</a></li>
+                                <!-- <li><a href="http://alumnifoundation.psgtech.ac.in/" style="background-color: #2B4BAB;color: white;text-align: left;">Alumni Foundation</a></li> -->
+                                <li><a href="#" style="background-color: #2B4BAB;color: white;text-align: left;">Alumni
+                                        Foundation</a></li>
+                                <li><a href="grdmuseum/" style="background-color: #2B4BAB;color: white;text-align: left;">PSG GRD
+                                        Museum</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://psgsonscharities.freshteam.com/jobs" style="background-color: #2B4BAB;color: white;text-align: left;">Careers</a></li>
+                        <li><a href="IIC/" style="background-color: #2B4BAB;color: white;text-align: left;"> IIC</a>
+                        </li>
+                        <li><a href="help-desk.php" style="background-color: #2B4BAB;color: white;text-align: left;"> Help Desk</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </nav>
+                <!-- <a href="https://mail.google.com/a/psgtech.ac.in" target="_blank">PSG Gmail</a>
+            <a href="student.php">Students</a>
+            <a href="parentzone.php">Parents</a>
+            <a href="javascript:void(0);">Alumni</a>
+                    <li><a href="http://alumnifoundation.psgtech.ac.in/">Alumni Foundation</a></li>
+                    <li><a href="https://alumni.psgtech.ac.in/">Alumni</a></li>
+            <a href="/achievements.php">Achievements</a> -->
+                <!-- </span>
+  </div> -->
+            </div>
+
+            <div class="clearfix"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                        <div class="tg-navigationarea"> <strong class="tg-logo"><a href="http://www.psgtech.edu">
+                            <!-- <img src="images/logo-G2-New.png" alt="PSG College of Technology"> -->
+                            <img src="images/logo.png" alt="PSG College of Technology">
+                        </a>
+                                <a href="images/ISO_certificate_2024.jpg">ISO certified 9001:2015 </a>
+                            </strong>
+                            <div class="tg-navigationandsearch">
+                                <nav id="tg-nav" class="tg-nav tg">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                                    </div>
+                                    <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
+                                        <ul>
+                                            <li><a href="https://www.psgtech.edu/">Home</a></li>
+                                            <li class="menu-item-has-children current-menu-item"><span class="tg-dropdowarrow"><i class="fa  fa-angle-right"></i></span> <a href="javascript:void(0);">About us</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="abtcllg.php">About the College</a></li>
+                                                    <li><a href="Management.php">Management</a></li>
+                                                    <li><a href="files/general/GC members list 2023 to 2026.pdf" target="_blank">Governing Council</a></li>
+                                                    <li><a href="founders.php">PSG &amp; Sons' Charities </a></li>
+                                                    <li><a href="trustees.php">Managing Trustees</a></li>
+                                                    <li><a href="principal.php">Principals</a></li>
+                                                    <li><a href="Dean-Academic.php">Dean - Academic</a></li>
+                                                    <li><a href="Dean-Administration.php">Dean - Administration</a></li>
+                                                    <li><a href="Dean-Autonomous.php" class="adm">Dean - Autonomous Functioning</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><span class="tg-dropdowarrow"><i class="fa  fa-angle-right"></i></span> <a href="javascript:void(0);">Academics</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="programme.php">Programmes</a></li>
+                                                    <li><a href="index.php">Departments</a></li>
+                                                    <li><a href="scholarships.php">Scholarship</a></li>
+                                                    <li><a href="placements/index.php">Placement</a></li>
+                                                    <li><a href="Heads.php">Heads of the Department</a></li>
+                                                    <!-- <li><a href="calendar.php">Academic Calendar</a></li> -->
+                                                    <li><a href="https://academicschedule.psgtech.ac.in/" target="_blank">Academic Calendar</a></li>
+                                                    <li><a href="files/calendar/Academic_Calendar_2023.pdf">College Calendar</a></li>
+                                                    <li><a href="https://library.psgtech.ac.in/" target="_blank">Library</a></li>
+                                                    <li><a href="https://sports.psgtech.ac.in/" target="_blank">Sports</a></li>
+
+                                                </ul>
+                                            </li>
+
+
+                                            <li class="menu-item-has-children"><span class="tg-dropdowarrow"><i class="fa  fa-angle-right"></i></span> <a href="javascript:void(0);">Admissions</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="programme_offered.php">Programmes offered</a></li>
+                                                    <li><a href="admission.php">Admission 2024-25</a></li>
+                                                    <li><a href="#" class="adm">B.Sc &amp; M.Sc Programmes Admission 2024</a></li>
+                                                    <li><a href="pgadmission2024/" class="adm" target="_blank">ME / MTech / MCA Programmes Admission 2024 </a></li>
+                                                    <li><a href="fn_oci_ciwgc" class="adm">BE / BTech Programmes Admission 2024 under FN / OCI / CIWGC</a></li>
+                                                    <!--  <li><a href="https://ecampus.psgtech.ac.in/fnapplication/" class="adm">FN/OCI/CIWGC Admission 2022</a></li>
+-->
+                                                    <!-- <li><a href="FNOCI.php" class="adm">FN/OCI/CIWGC Admission 2023</a></li> -->
+                                                    <!-- <li><a href="fn_oci_ciwgc/" class="adm">FN/OCI/CIWGC Admission 2023</a></li> -->
+                                                    <!-- fn_oci_ciwgc/ -->
+                                                    <!-- <li><a href="https://events.psgtech.ac.in/flashedu/images/files/BSc App Sci Shortlisted candidates 2022-23.pdf" class="adm">BSc App.Sci. shortlisted candidates 2022</a></li> -->
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="COE/Home.html">Exams</a></li>
+
+                                            <li><a href="NAAC/">NAAC</a></li>
+
+                                            <!-- <li class="NAAC/"> <a href="NAAC"></a>
+                                            <ul class="sub-menu">
+                                            <ul class="sub-menu">
+
+                                            <li><a href="1st - IQAC Meeting Minutes 2021-22.pdf">Minutes of 1<sup>st </sup>meeting 21-22</a></li></a></li>
+                                            <li><a href="Minutes of 2nd meeting 21-22.pdf">Minutes of 2<sup>nd </sup>meeting 21-22</a></li></a></li>
+                                            <li><a href="IQAC-EPTV 2019-2020.pdf">External Team Report (19-20) </a></li></a></li>
+                                            <li><a href="IQAC-memebrs.jpg">IQAC  Members List  2019-21</a></li>
+                                            <li><a href="IQACarchives.php">Archives</a></li>
+                                            </ul>
+                                            </li>
+
+                                            </ul>
+                                            </li> -->
+
+
+                                            <li class="menu-item-has-children"><span class="tg-dropdowarrow"><i class="fa  fa-angle-right"></i></span> <a href="javascript:void(0);">Research</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="R&amp;D.php">Office of Dean Research</a></li>
+                                                    <!-- <li><a href="iprcell/">IPR Cell</a></li> -->
+                                                    <li><a href="http://iprcell.psgtech.ac.in/" target="_blank">IPR Cell</a></li>
+                                                    <li><a href="http://ir.psgtech.ac.in/jspui/" target="_blank">PhD Thesis</a></li>
+                                                    <!-- <li><a href="research_index.php">Research Centers</a></li> -->
+                                                    <li><a href="http://journals.psgtech.ac.in/" target="_blank">Technology Journal</a>
+                                                    </li>
+                                                </ul>
+                                                <!--http://ows.psgtech.edu/journal/index.htm http://ows.psgtech.edu/Researchindex.php-->
+                                            </li>
+
+
+                                            <li class="menu-item-has-children"><span class="tg-dropdowarrow"><i class="fa  fa-angle-right"></i></span> <a href="javascript:void(0);">Industry</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="Mousgloblink.php">MOUs</a></li>
+
+                                                    <!-- <li><a href="Coll-Act/">Colloborative Activities</a></li> -->
+                                                    <li><a href="./files/general/coeweldingdetails.pdf">COE Welding</a>
+                                                    </li>
+                                                    <!-- <li><a href="http://www.coew.psgtech.ac.in/">COE Welding</a></li> -->
+
+                                                    <li><a href="coeindutech/" target="_blank">Indu Tech</a></li>
+                                                    <li><a href="teqip/">TEQIP</a></li>
+                                                    <li><a href="http://www.psgstep.org/" target="_blank">STEP</a></li>
+                                                    <li><a href="http://www.psgtifac.co.in/" target="_blank">TIFAC</a></li>
+
+                                                    <!-- <li><a href="IIC/">IIC</a></li> -->
+                                                    <li><a href="//iipc.psgtech.ac.in/">IIPC</a></li>
+                                                    <!--li><a href="PACE.php">PACE</a></li-->
+                                                    <li><a href="http://cnce.psgtech.ac.in/" target="_blank">CNCE</a></li>
+                                                    <li><a href=" http://csrc.psgtech.ac.in" target="_blank">CSRC</a></li>
+                                                    <li><a href="Research/ird.html">CIRD</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="coeindutech/">InduTech</a></li>
+
+                                            <li><a href="nirf.php" style="line-height:1.5em">NIRF &amp; <br> ARIIA</a></li>
+
+                                            <li><a href="cont.php">Contact</a></li>
+
+
+                                        </ul>
+
+                                    </div>
+                                </nav>
+                                <!--    <div class="tg-searchbox"> <a id="tg-btnsearch" class="tg-btnsearch" href="javascript:void(0);"><i class="icon-magnifier"></i></a>
+                <form class="tg-formtheme tg-formsearch">
+                  <fieldset>
+                    <input type="search" name="search" class="form-control" placeholder="Start Your Search Here">
+                  </fieldset>
+                </form>
+              </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- alumni menu
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>-->
+        <script>
+            $(document).ready(function () {
+                var touch = $('#resp-menu');
+                var menu = $('.menu');
+
+                $(touch).on('click', function (e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+                $(window).resize(function () {
+                    var w = $(window).width();
+                    if (w > 767 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+
+            });
+        </script>
+
+        <!-- alumni end menu -->
+
+        <script type="text/javascript">
+            <!--$('.awNotices').append('<span class="controller fa fa-pause"></span>');-->
+            $('.awNotices a:nth-of-type(1)').addClass('active');
+
+            function awNotice() {
+                if (!$('.awNotices').hasClass('stopped')) {
+                    var $active = $('.awNotices a.active');
+                    var $next = $active.next('a');
+
+                    if ($next.length) {
+                        $next.addClass('active');
+                        $active.removeClass('active');
+                    } else {
+                        $active.removeClass('active');
+                        $('.awNotices a:first-of-type').addClass('active');
+                    }
+                }
+            }
+
+            $('.awNotices .controller').click(function () {
+                $(this).toggleClass('fa-pause fa-play');
+                $('.awNotices').toggleClass('stopped');
+            })
+
+            function awNotices(timer) {
+                setInterval("awNotice()", timer);
+            }
+
+            awNotices(2500);
+        </script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(document).bind("contextmenu", function(e) {
+            return false;
+        });
+    })
+    document.onkeydown = function(e) {
+        var e = e || event;
+
+        if (e.shiftKey === true) {
+            return false;
+        }
+    };
+</script>
+
+<script type="text/javascript">
+    function mischandler() {
+        return false;
+    }
+
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    var isCtrl = false;
+    document.onkeyup = function(e) {
+        if (e.which == 17)
+            isCtrl = false;
+    }
+
+    document.onkeydown = function(e) {
+        if (e.which == 17)
+            isCtrl = true;
+        if ((e.which == 85) || (e.which == 67) && isCtrl == true) {
+
+            return false;
+        }
+    }
+</script>
+
+<main id="tg-main" class="tg-main tg-haslayout">
+    <div class="container">
+        <div class="row">
+            <div>
+                <section class="tg-sectionspace tg-haslayout tg-homebannervtwo">
+                    <div id="tg-homeslider" class="tg-homeslider owl-carousel tg-btnround tg-haslayout owl-loaded owl-drag">
+
+                    
+                    
+                    
+                    
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+
+                        
+
+                        <!-- <div class="item">
+                            <figure> <img src="images/slider/foundationday2023.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Foundation day 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+
+                        <!-- <div class="item">
+                            <figure> <img src="images/slider/su2.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Freshers Orientation Programme 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="item">
+                            <figure> <img src="images/slider/su3.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Freshers Orientation Programme 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+
+                        <!-- <div class="item">
+                            <figure> <img src="images/slider/y20-e.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Y20 Brainstorming Session</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+
+                        <!-- <div class="item">
+                            <figure> <img src="images/slider/y20-b.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Y20 Brainstorming Session</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+
+                        <!-- <div class="item">
+                            <figure> <img src="images/slider/ac-c.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Award Ceremony 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure> <img src="images/slider/ac-a.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Award Ceremony 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="item">
+                            <figure> <img src="images/slider/ac-b.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Award Ceremony 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+                        <!-- <div class="item">
+                            <figure> <img src="images/slider/rc-a.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Research Conclave 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+
+<!-- 
+                        <div class="item">
+                            <figure> <img src="images/slider/G20_Slider.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>G20 University Connect</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+
+
+                        <!-- <div class="item">
+                            <figure> <img src="images/slider/slider_Dinesh.png" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+
+                                            <div class="tg-description">
+                                                <p>PSG & Sons' Charities - 97<sup>th</sup> Founders Day</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div> -->
+
+
+                        
+
+
+                        
+
+
+
+                        
+
+                        
+
+                        <!-- End -  Slider Updated On 18.07.2023 -->
+
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-5820px, 0px, 0px); transition: all; width: 23280px;"><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/foundation_day_5.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>98<sup>th</sup> Founders<sup>'</sup> Day - PSG &amp; Sons<sup>'</sup> Charities</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/viksit@2047_image.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Viksit Bharat @ 2047</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/slider_Dinesh1.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Dr. Dinesh Singh - Special talk on "Education for the 21st Century" </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/slider_shivan1.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Students Interaction section with Dr K Sivan, Chairman, ISRO. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/slider1.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <h1>Welcome to PSG College of Technology</h1>
+                                            <div class="tg-description">
+                                                <p>PSG College of Technology, an ISO 9001:2015 certified institution is one of the foremost institutions founded by the PSG &amp; Sons' Charities Trust (1926). </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/psgtech.webp" alt="image description">
+
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <h1>PSG College of Technology</h1>
+                                            <div class="tg-description">
+                                                <p>Provide world-class Engineering Education, Foster Research and Development. Evolve innovative applications of Technology.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item active" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Foundation-day.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Foundation Day 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Orientation - 2024.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Freshers Orientation Programme 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Slider-Electrical.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Award Ceremony 2024 - Electrical and Allied Engineering Programmes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Slider Mech.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Award Ceremony 2024 - Mechanical and Allied Engineering Programmes </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Award-Ceremony-Science-1.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Award Ceremony 2024 - Science Stream</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/rc2024.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Research Conclave 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/foundation_day_5.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>98<sup>th</sup> Founders<sup>'</sup> Day - PSG &amp; Sons<sup>'</sup> Charities</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/viksit@2047_image.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Viksit Bharat @ 2047</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/slider_Dinesh1.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Dr. Dinesh Singh - Special talk on "Education for the 21st Century" </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/slider_shivan1.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                                <p>Students Interaction section with Dr K Sivan, Chairman, ISRO. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/slider1.webp" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <h1>Welcome to PSG College of Technology</h1>
+                                            <div class="tg-description">
+                                                <p>PSG College of Technology, an ISO 9001:2015 certified institution is one of the foremost institutions founded by the PSG &amp; Sons' Charities Trust (1926). </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/psgtech.webp" alt="image description">
+
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <h1>PSG College of Technology</h1>
+                                            <div class="tg-description">
+                                                <p>Provide world-class Engineering Education, Foster Research and Development. Evolve innovative applications of Technology.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Foundation-day.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Foundation Day 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Orientation - 2024.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Freshers Orientation Programme 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Slider-Electrical.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Award Ceremony 2024 - Electrical and Allied Engineering Programmes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Slider Mech.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Award Ceremony 2024 - Mechanical and Allied Engineering Programmes </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/Award-Ceremony-Science-1.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Award Ceremony 2024 - Science Stream</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                    </div></div><div class="owl-item cloned" style="width: 970px;"><div class="item">
+                            <figure> <img src="images/slider/rc2024.jpg" alt="image description">
+                                <figcaption class="tg-slidercontent">
+                                    <div class="tg-slidercontentbox">
+                                        <div class="tg-titledescription">
+                                            <div class="tg-description">
+                                            <p>Research Conclave 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div></div></div></div><div class="owl-nav"><div class="tg-btnroundprev tg-btnprev"><i class="fa fa-angle-left"></i></div><div class="tg-btnroundnext tg-btnnext"><i class="fa fa-angle-right"></i></div></div><div class="owl-dots disabled"></div></div>
+                </section>
+            </div>
+
+
+            <div id="tg-twocolumns" class="tg-twocolumns">
+                <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+
+                    <div id="tg-content" class="tg-content">
+                        <section class="tg-sectionspace tg-haslayout">
+
+                            <div class="tg-shortcode tg-welcomeandgreeting tg-welcomeandgreeting-v2">
+                                <div class="tg-shortcodetextbox">
+                                    <h2>Welcome to PSG College of Technology</h2>
+
+                                    <div class="tg-description">
+                                        <p align="justify">PSG College of Technology, an ISO 9001:2015 certified institution is one of the foremost institutions founded by the PSG &amp; Sons' Charities Trust (1926). The College was established in the year 1951 and the Founders wisely decided to locate it in the same campus as the PSG Industrial Institute for effective industry-institute interaction.<br><br>
+
+                                            Provide world-class Engineering Education, Foster Research and Development. Evolve innovative applications of Technology. Encourage Entrepreneurship. Ultimately mould young men and women capable of assuming leadership of the society for the betterment of the Country.
+                                        </p>
+
+                                        <p align="right"><a href="abtcllg.php">more...</a></p>
+                                    </div>
+                                </div>
+                        </div></section>
+
+                        <section class="tg-sectionspace tg-haslayout">
+                            <div class="tg-latestnews">
+
+                                <div class="tg-borderheading">
+                                    <h2>Latest Events</h2>
+                                </div>
+
+                                <div id="tg-latesteventsslider" class="tg-latestnewsslider owl-carousel tg-posts owl-loaded owl-drag">
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+
+
+                                    <!-- <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="files/general/Y20 Report-june28.pdf" target="_blank"> <img src="images/slider/y20.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;June 2023</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Y20 Brainstorming Session</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">21
+                                                    <p>Y20 Brainstorming Session: Future of work - Industry 4.0, Innovation and 21st century skills</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div> -->
+
+                                    <!-- <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="files/general/report g20.pdf" target="_blank"> <img src="images/g20logo.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;March 2023</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>G20 University Connect</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>G20 University Connect Engaging Young Minds PSG College of Technology Lecture Series on 28th March, 2023</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div> -->
+
+
+                                    
+
+                                    
+                                    
+                                    <!-- <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/nssaward_21.pdf" target="_blank"> <img src="images/nssawd21.webp" style="width: 257px; height: 159px;"  class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;Dec 2021</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>NSS Anna University Level Awards 2020 – 2021</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>We have received Best NSS Unit Award, Best Programme Officer Award and Two Best NSS Volunteer Award for the academic year 2020-2021 from Anna University.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/ECE-ChipFabrication.pdf" target="_blank"> <img src="images/chipfab.webp" style="width: 257px; height: 159px;"  class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;Sep 2021</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Cryptographic Chip Fabrication</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>The Department of ECE successfully fabricated two cryptographic hardware accelerators in collaboration with SCL, Chandigarh in September 2021.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/ARIIA 2021 Report.pdf" target="_blank"> <img src="images/ariia.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>2021</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Institute Data for Atal Ranking of Institutions on Innovation Achievements (ARIIA) - 2020-21</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>List of all the departments / centers / units are part of innovation and startup ecosystem of the institite...</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="eduWorld.php" target="_blank"> <img src="images/eduWorld.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>June 2021</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>BE(CSE) programme was ranked among the top 10 in India by Education world.</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>This year, in response to public feedback and demand for rankings of education institutions by popular professional undergraduate programmes,...</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <img src="images/Hackathon.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>08 April, 2021</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Future of Retail Hackathon - 2021</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>Our students have bagged the first place in the Future of Retail Hackathon and also they have been given an interview opportunity for an internship at Walmart.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="drvevents.php" target="_blank"> <img src="images/drvramasamy.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;&nbsp;2020</span></a></li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Recipients of Professor Jai Krishna Memorial Award 2020
+                                                        <br>
+                                                        By INAE, Gurugram, Haryana
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>
+                                                        Dr V Ramaswamy, Professor, Department of Metallurgical Engineering, PSG College of Technology, Coimbatore...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="#" onclick="return false;"> <img src="images/3 (2).webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>03 Dec, 2019</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>NCC Officers - Refresher Course Award Ceremony</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>
+                                                        Capt. Dr. M. Kalpana, Associate Professor, Department of Humanities has received two commandant award for excellence first in Planning & Organising Institutional training and another in Flag area briefing from Brigadier Tapan Lal Sah, Commandant OTA, Gwalior.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="#" onclick="return false;"> <img src="images/image001.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>31 Oct, 2019</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>ECE Gate Study Material Release</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>
+                                                        ECE GATE Study material prepared by the faculty of ECE department was released by Shri Mangat Ram Sharma, Principal Secretary ,Hr. Education Dept., Govt of Tamilnadu and the first copy received by Dr.FranciscoMarmolejo,Lead Tertiary Education Specialist, World Bank .During the National Level Two day Workshop on TEQIP for NPIU/SPIU Officials on 31/10/2019 conducted at Jenneys Residency.
+
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="https://drive.google.com/drive/folders/1MUHfnTM1L-U9u2ozrLlc3f9GREaHmdTN" target="_blank"> <img src="images/parentsmeet.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>10 Jun, 2019</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Parent Meet 2019</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>
+                                                        Principal-incharge interaction meeting with parents on the reopening day of odd semester 2019-2010 was held at assembly hall on 10th June 2019.
+
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/general/Kennametal India limited.pdf" target="_blank"> <img src="images/kennametal.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>12 Dec, 2018</span></a></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Kennametal Scholarships 2018</a></h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>
+                                                        Our students has received Kennametal Scholarship worth Rs 7.2 lakhs. 12 students from each department totally 36 students received scholarships.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/alumni NEW.pdf" target="_blank"> <img src="images/PSG_5159_resize.webp" style="width: 257px; height: 159px;" alt="image description" class="latest-evt-img"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>25 Jan, 2019</span></a></li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>93rd Founders Day Celebrations</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>
+                                                        Dr.A. Chockalingam, Professor & Chair - Department of Electrical and Communication Engg, Indian Institute of Science, Bangalore, BE ECE Alumnus - 1984, Distinguished Alumni Award</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="https://www.indiannavy.nic.in/content/memorandum-understanding-signed-between-indian-navy-and-psg-college-technology-coimbatore" target="_blank"> <img src="images/Pix3Edt2.jpeg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>29 Oct, 2018</span></a></li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>MoU Signed Between Indian Navy and PSG College of Technology</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>
+                                                        A Memorandum of Understanding, (MoU) was signed between the Peelamedu Samanaidu Govindasamy College of Technology, Coimbatore (PSG CT) and Indian Navy on 29 October 2018.</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="#" onclick="return false;"> <img src="images/mercesressch.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>29 Sep, 2018</span></a></li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Mercedes in MECH - Scholorship</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>
+                                                        Three students from the Department of Production Engineering were awarded Rs.100000 (Rs.1 Lakh) each under the Mercedes in Mech Scholarship Program 2018 at Bengaluru.</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/Theidea.pdf"> <img src="images/IMGfinact.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>April, 2018</span></a></li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Our IT Students won cash prize in FINNOVATICA 2018</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>Our III B.Tech IT students won Rs.10,00,000[Ten lakhs] cash prize in
+                                                        "FINNOVATICA 2018" contest conducted by Fullerton India Pvt Ltd
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/Bosch DNA  final NEW.pdf"> <img src="images/IMG_20180310_171844.jpg" style="width: 257px; height: 159px;"  class="latest-evt-img" alt="image description"> </a> </figure>
+
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>10 March, 2018</span></a></li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Our ECE Students won BOSCH D.N.A Electronics Challenge</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>ECE Students won the FIRST PLACE and were awarded with a cash
+                                                        prize of one lakh rupees in a National level hardware startup
+                                                        conclave, HARDTECH KOCHI.
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="cosmidaw.php"> <img src="images/nivedha.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>March, 2018</span></a></li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Our Instrumentation alumnus Who found the 'cosmic dawn'</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>Nivedita Mahesh, a doctoral student at the Arizona State University, USA, is one of the five scientists who found the "cosmic dawn", when the first stars lit up the baby universe.
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/techtransfer.pdf"> <img src="images/biomprj.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>January, 2018</span> </a> </li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Automatic Positive Airway Pressure(APAP)</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>PSG Tech has developed a cost effective
+                                                        device Automatic Positive Airway Pressure(APAP) and has transferred the
+                                                        technology to Roots Industries.
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/pacepuma.pdf"> <img src="images/events/pace_p1.jpg" style="width: 257px; height: 159px;" class="latest-evt-img"  alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>24 May, 2017</span> </a> </li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>PACE Global Annual Forum: PUMA Project</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>PACE, Partners for the Advancement of Collaborative Engineering Education, is a partnership between General Motors, Siemens PLM Software
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+
+
+
+
+
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="#" data-toggle="modal" data-target="#myModal123"><img src="images/events/Madhu.webp" style="width: 257px; height: 159px;"  class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>Apr, 2017</span> </a> </li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Our B.E. ECE alumnus is selected as Technology Innovators</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>Our B.E. ECE 2004 alumnus Dr Madhu Bhaskaran is Associate Professor in RMIT University in Australia.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/Technology Transfer.pdf"><img src="images/events/ece.webp" style="width: 257px; height: 159px;"  class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i> <span>Friday, June 23, 2017</span> </a> </li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Academia to Industry Technology Transfer</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>Traditionally, the multi channel EEG recorders used in hospitals usually includes multiple wires</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="#" data-toggle="modal" data-target="#myModal2"> <img src="images/events/a1.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>Saturday, June 10, 2017</span> </a> </li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>
+                                                        The First Tech Challenge Awards 2017</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>The First Tech Challenge was conducted by Caterpillar, India Limited Chennai</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="#" data-toggle="modal" data-target="#myModal3"><img src="images/events/event-02.webp" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i> <span>April, 2017</span> </a> </li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Danfoss Innovator Project Award 2016-17</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>Two of our students from the ECE Department Pranesh.C (14L406) and Vikas.V (13L155) </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+
+                                    <div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="#" data-toggle="modal" data-target="#myModal4"> <img src="images/events/event-04.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+                                                <ul class="tg-matadata">
+                                                    <li> <i class="fa fa-calendar"></i> <span>April, 2016</span> </a> </li>
+                                                </ul>
+                                                <div class="tg-themeposttitle">
+                                                    <h3>PSG CT : MHRD Ranking 2016</a></h3>
+                                                </div>
+                                                <div class="tg-description">
+                                                    <p>PSG College of Technology (24th among Engineering Institutions) and PSG Pharmacy College</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div> -->
+
+                            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-728px, 0px, 0px); transition: all; width: 2913px;"><div class="owl-item cloned" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="#" target="_blank"> <img src="images/slider/ird.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;13 Sep 2023</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Mou between PSGCT and Salzer Electronics</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>An MoU was signed on 13 Sep 2023 in presence of our Principal and Shri.R.Doraiswamy, Managing Director, Salzer electronics.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item cloned" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="amritmahotsav/" target="_blank"> <img src="images/amrit_mahotsav.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;August 2022</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Azadi Ka Amrit Mahotsav</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>As per the proclamation from the Ministry of Education, Govt. of India, AICTE, Anna
+                                                        University, Chennai - <strong> PSG College of Technology </strong>has organised various events to make the students aware about the importance of Independence day.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item cloned" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/inaguration_photos.pdf" target="_blank"> <img src="images/PSG_0658.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;May 2022</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>CoE inaguration </h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>Shri Vikram Mohan. Managing Director ,PRICOL Smt Laksmi Mohan, President.PCS.PRICOL</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item active" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="files/general/Report-yogaday24.pdf" target="_blank"> <img src="images/yoga-day.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+                                                
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;21 June 2024</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>International Yoga Day 2024</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>On the occasion of 10th International day of yoga celebration, National Cadet Corps of PSG College of Technology organized "A Mass Yoga Demonstration Event" on 21st June 2024 at PSG college boys hostel premises. </p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item active" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="Report-RC.php" target="_blank"> <img src="images/rc-2024-8.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+                                                
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;16-17 May 2024</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Research Conclave 2024</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>This conclave series, a brainchild of our beloved Principal, was envisaged as a platform for academicians, researchers, and practicing engineers, to exchange ideas and share experiences in research and innovation</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item active" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="files/general/IISF-Report.pdf" target="_blank"> <img src="images/slider/IISF.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>PSG CT Triumphs at IISF Space India Hackathon 2023</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>We excelled at the IISF 2023 and the Space India Hackathon organized by ISRO and other esteemed organizations, with two participant teams winning and securing runner-up positions.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="#" target="_blank"> <img src="images/slider/ird.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;13 Sep 2023</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Mou between PSGCT and Salzer Electronics</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>An MoU was signed on 13 Sep 2023 in presence of our Principal and Shri.R.Doraiswamy, Managing Director, Salzer electronics.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="amritmahotsav/" target="_blank"> <img src="images/amrit_mahotsav.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;August 2022</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Azadi Ka Amrit Mahotsav</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>As per the proclamation from the Ministry of Education, Govt. of India, AICTE, Anna
+                                                        University, Chennai - <strong> PSG College of Technology </strong>has organised various events to make the students aware about the importance of Independence day.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg"> <a href="files/levents/inaguration_photos.pdf" target="_blank"> <img src="images/PSG_0658.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a> </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;May 2022</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>CoE inaguration </h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>Shri Vikram Mohan. Managing Director ,PRICOL Smt Laksmi Mohan, President.PCS.PRICOL</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item cloned" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="files/general/Report-yogaday24.pdf" target="_blank"> <img src="images/yoga-day.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+                                                
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;21 June 2024</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>International Yoga Day 2024</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>On the occasion of 10th International day of yoga celebration, National Cadet Corps of PSG College of Technology organized "A Mass Yoga Demonstration Event" on 21st June 2024 at PSG college boys hostel premises. </p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item cloned" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="Report-RC.php" target="_blank"> <img src="images/rc-2024-8.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+                                                
+                                                <ul class="tg-matadata">
+                                                    <li><i class="fa fa-calendar"></i><span>&nbsp;16-17 May 2024</span></li>
+                                                </ul>
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>Research Conclave 2024</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>This conclave series, a brainchild of our beloved Principal, was envisaged as a platform for academicians, researchers, and practicing engineers, to exchange ideas and share experiences in research and innovation</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div><div class="owl-item cloned" style="width: 212.667px; margin-right: 30px;"><div class="item">
+                                        <article class="tg-themepost tg-newspost">
+                                            <figure class="tg-featuredimg">
+                                                <a href="files/general/IISF-Report.pdf" target="_blank"> <img src="images/slider/IISF.jpg" style="width: 257px; height: 159px;" class="latest-evt-img" alt="image description"> </a>
+                                            </figure>
+                                            <div class="tg-themepostcontent">
+
+                                                <div class="tg-themeposttitle">
+                                                    <h3>PSG CT Triumphs at IISF Space India Hackathon 2023</h3>
+                                                </div>
+
+                                                <div class="tg-description">
+                                                    <p>We excelled at the IISF 2023 and the Space India Hackathon organized by ISRO and other esteemed organizations, with two participant teams winning and securing runner-up positions.</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </div></div></div></div><div class="owl-nav"><div class="tg-btnsimpleprev tg-btnprev"><i class="icon-arrow-left"></i></div><div class="tg-btnsimplenext tg-btnnext"><i class="icon-arrow-right"></i></div></div><div class="owl-dots disabled"></div></div>
+                        </div></section>
+
+
+                        <section class="tg-sectionspace tg-haslayout welcome">
+                            <div class="tg-borderheading-welcome">
+                                <h2>Campus Highlights</h2>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+                                <div class="column">
+                                    <div class="img-holder">
+                                        <a href="https://library.psgtech.ac.in/"><i class="icon-library"></i></a> <!-- Modified by MKM-20-06-2022  -->
+                                    </div>
+                                    <span class="title">Library</span>
+                                    <p>Our Library was established in the year 1951. It holds more than one lakh book volumes.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="column">
+                                    <div class="img-holder">
+                                        <a href="hostel/"> <i class="icon-apartment"></i></a>
+
+                                    </div>
+                                    <span class="title">Hostel</span>
+                                    <p>Our College facilitate students an excellent Hostel facility to feel home away from home.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="column">
+                                    <div class="img-holder">
+                                        <a href="placements/index.php"><i class="icon-rocket"></i></a>
+                                    </div>
+                                    <span class="title">Placement</span>
+                                    <p>Placement Office facilitating campus recruitment for multinational and national organizations. </p>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                    <aside id="tg-sidebar" class="tg-sidebar">
+                        <div class="tg-widget tg-widgetnoticeboard">
+
+                            <div class="tg-widgettitle">
+                                <h3 class="box-header">Announcements</h3>
+                            </div>
+                            <ul>
+                                                                            <li class="recent-post-item">
+
+                                                                                                    <span class="date">
+                                                        27                                                        <span>Dec</span>
+                                                    </span>
+
+                                                                                                    <a href="educms/sorces/CLG/anns/Senior_Research_fellow.pdf" target="blank">Recruitment for SRF under IGSTC funded project</a>
+                                                                                            </li><br><br>
+                            </ul>
+
+                        
+                                                                    <li class="recent-post-item">
+
+                                                                                                    <span class="date">
+                                                        27                                                        <span>Dec</span>
+                                                    </span>
+
+                                                                                                    <a href="educms/sorces/CLG/anns/ProjectAssociate.pdf" target="blank">Recruitment for Project Associate-I under IGSTC funded project</a>
+                                                                                            </li><br><br>
+                            
+
+                        
+                                        <a href="course conducted.php" class="viewall">View All Announcements</a>
+
+                        </div>
+
+
+                        <div class="tg-widget tg-widgetquicklinks tg-widgetquicklinksvtwo">
+                            <div class="tg-widgettitle">
+                                <h3 class="box-header">Downloads</h3>
+                            </div>
+                            <div class="tg-widgetcontent">
+                                <ul>
+                                    <!-- <li> <a href="#"> <span> Prospectus </span> </a> </li> -->
+                                    <li><a href="approval.php"><span>Approvals</span> </a> </li>
+                                    <li><a href="files/general/UGC Undertaking.pdf" target="_blank"><span>UGC undertaking</span> </a> </li>
+                                    <li><a href="NBA Accreditation.php"><span>NBA Accreditation</span> </a> </li>
+                                    <li><a href="images/ISO_certificate_2024.jpg"><span>ISO Certificate.</span> </a> </li>
+                                    <li><a href="files/general/Mandatory Disclosure22-23.pdf" target="blank"><span>Mandatory Disclosure</span></a></li>
+                                    <li><a href="bshets.php"><span>Balance Sheets </span></a></li>
+                                    <li><a href="tech bulletin.php"><span>Annual Report<br>(Tech Bulletin)</span> </a> </li>
+                                    <li><a href="files/general/PSG_Profile.pdf"><span>A journey towards excellence</span> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tg-widget tg-widgetdownload">
+                            <div class="tg-widgettitle">
+                                <h3 class="box-header">Quick Links</h3>
+                            </div>
+                            <div class="tg-widgetcontent">
+                                <ul>
+                                    <li> <a href="https://www.aicte-india.org/feedback/" target="_blank">AICTE Feedback</a> </li>
+                                    <li> <a href="MandatoryCommittee.php" target="_blank">UGC / AICTE Mandatory Committees</a> </li>
+                                    <li> <a href="files/general/NABL_CALIBRATION.pdf" target="_blank">NABL CALIBRATION</a> </li>
+                                    <li> <a href="./NAAC/Statutory Declaration under the Section.pdf" target="_blank">RTI_Act</a></li>
+                                    <li> <a href="https://www.psgtech.edu/ieee-website/" target="_blank">IEEE SC 12951</a> </li>
+                                    <!-- <li> <a href="http://careers.psgtech.edu/">Careers @ PSG</a> </li> -->
+                                    <!--<li> <a href="IQAC.pdf">IQAC</a> </li>
+                                    <li> <a href="grievance.php">Students Grievance Redressal Committee</a> </li>
+                                    <li> <a href="SHRC.php">Internal Complaints Committee (ICC)</a> </li>
+                                    <!- - <li> <a href="SHRC.php">Sexual Harassment Redressal Committee</a> </li>-->
+                                    <!-- <li> <a href="training/">Training - PSG II</a> </li> -->
+                                    <li> <a href="teqip/" target="_blank">TEQIP</a> </li>
+                                    <li> <a href="http://www.psgstep.org/" target="_blank">STEP</a> </li>
+                                    <!-- <li> <a href="nirf.php">NIRF</a> </li> -->
+                                    <li> <a href="https://psgtech.edu/NAAC/ssr/criteria_1/cycle-2/1.4.1/1.4.1_Student_Feedback.pdf" target="_blank">Student's Feedback</a> </li>
+                                    <li> <a href="http://thebridge.psgtech.ac.in/" target="_blank">Student Magazine - The Bridge</a> </li>
+                                    <li> <a href="http://journals.psgtech.ac.in/" target="_blank">National Journal of Technology</a> </li>
+                                    <!--http://psgtech.edu/journal/	-->
+                                    <li> <a href="https://www.psgsonscharities.org/" target="_blank">PSG &amp; Sons' Charities</a> </li>
+                                    <!--  <li> <a href="#">Transcripts Online</a> </li> -->
+                                    <li> <a href="https://psgtech.directverify.in/student" target="_blank">Transcripts Online</a> </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <!--     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <section class="tg-sectionspace tg-haslayout">
+              <div class="tg-affiliationscertifications">
+                <div class="tg-borderheading">
+                  <h2>Affiliations / Certifications</h2>
+                </div>
+                <div id="tg-affiliationscertificationsslider" class="tg-affiliationscertificationsslider owl-carousel">
+                  <div class="item">
+                    <figure> <a href="javascript:void(0);"> <img src="images/brands/img-01.png" alt="image description"> </a> </figure>
+                  </div>
+                  <div class="item">
+                    <figure> <a href="javascript:void(0);"> <img src="images/brands/img-02.png" alt="image description"> </a> </figure>
+                  </div>
+                  <div class="item">
+                    <figure> <a href="javascript:void(0);"> <img src="images/brands/img-03.png" alt="image description"> </a> </figure>
+                  </div>
+                  <div class="item">
+                    <figure> <a href="javascript:void(0);"> <img src="images/brands/img-04.png" alt="image description"> </a> </figure>
+                  </div>
+                  <div class="item">
+                    <figure> <a href="javascript:void(0);"> <img src="images/brands/img-05.png" alt="image description"> </a> </figure>
+                  </div>
+                  <div class="item">
+                    <figure> <a href="javascript:void(0);"> <img src="images/brands/img-06.png" alt="image description"> </a> </figure>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--************************************
+				Main End
+		*************************************-->
+                <!--************************************
+				Footer Start
+		*************************************-->
+                <!-- <footer id="tg-footer" class="tg-footer tg-haslayout">
+    <div class="tg-signupbox">
+      <div class="container">
+        <div class="tg-signuptextbox">
+          <h3>Free Signup!</h3>
+          <div class="tg-description">
+            <p>Subscribe Monthly Newsletter &amp; Get Latest New &amp; Updates.</p>
+          </div>
+        </div>
+        <form class="tg-formtheme tg-formsignupfree">
+          <fieldset>
+            <div class="form-group">
+              <input type="text" name="emailid" class="form-control" placeholder="Enter Email ID">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="tg-btn">Signup Now</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="tg-footermiddlebar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="tg-widget tg-widgetcompanyinfo">
+              <div class="tg-widgetcontent"> <strong class="tg-logo"><a href="index.html"><img src="images/logo2.png" alt="image description"></a></strong>
+                <ul class="tg-infolist mt20">
+                  <li> <i class="icon-location"></i>
+                    <address>
+                    Post Box No. 1611<br>
+                    Peelamedu<br>
+                    Coimbatore - 641004
+                    </address>
+                  </li>
+                  <li> <i class="icon-phone-handset"></i> <span>0422-2572177, 2572477, 4344777</span> </li>
+                  <li> <i class="icon-printer"></i> <span>0422-2573833</span> </li>
+                  <li> <a href="mailto:principal@psgtech.edu"> <i class="icon-envelope"></i> <span>principal@psgtech.edu </span> </a> </li>
+                </ul>
+                <ul class="tg-socialicons">
+                  <li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                  <li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                  <li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                  <li class="tg-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="tg-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+           <div id="map">
+
+
+           </div>
+
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="tg-widget tg-widgetcoursecategories">
+              <div class="tg-widgettitle">
+                <h3>My PSG</h3>
+              </div>
+              <div class="tg-widgetcontent">
+                <ul>
+                  <li><a href="http://events.psgtech.edu/library/">Library</a></li>
+                  <li><a href="http://ows.psgtech.edu/FM.php">Community Radio</a></li>
+                <!---   <li><a href="http://ows.psgtech.edu/Last-Week/">PSG Tech News</a></li> - ->
+                  <li><a href="http://admin.psgtech.ac.in/olhd/">Virtual Tour</a></li>
+                  <li><a href="http://gapps.psgtech.ac.in">G Apps</a></li>
+                  <li><a href="http://ows.psgtech.edu/ragging.php">Anti Ragging</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="tg-widget tg-widgetflickrgallery">
+              <div class="tg-widgettitle">
+                <h3>Glance at PSG</h3>
+              </div>
+              <div class="tg-widgetcontent">
+                <ul>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-10.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-11.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-12.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-13.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-14.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-15.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-16.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-17.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-18.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-19.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-20.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                  <li>
+                    <figure> <a href="javascript:void(0);"><img src="images/glance/img-21.jpg" alt="image description"></a>
+                      <figcaption><a href="#"><i class="fa fa-mail-forward"></i></a></figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tg-footerbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <span class="tg-copyright">Copyright &copy; 2017 PSG. All Rights Reserved</span> </div>
+           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <span class="tg-copyright pull-right">Designed by PSG Software Technologies</span> </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--************************************
+				Footer End
+		*************************************-->
+                <div class="modal fade" id="myModal123" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">Top ten Technology Innovators under 35 in Asia</h4>
+                            </div>
+                            <p align="center"><br><img src="images/events/Madhu.jpg" alt="image description"></p>
+                            <div class="modal-body">
+
+                                Our B.E. ECE 2004 alumnus Dr Madhu Bhaskaran is Associate Professor in RMIT University in Australia. She is selected as one of the Top ten Technology Innovators under 35 in Asia, by the MIT Technology Review. </div><br>
+                            <p align="right">
+                                Further details <a href="https://www.rmit.edu.au/news/all-news/2017/jul/big-win-unbreakable-devices-and-electronic-skin">click here.</a></p>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+
+
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">The First Tech Challenge Awards 2017</h4>
+                            </div>
+                            <p align="center"><br><img src="images/events/a1.jpg"></p>
+                            <div class="modal-body">The First Tech Challenge was conducted by Caterpillar, India Limited Chennai at on 10.06.2017. Teams from PSG College of Technology, CEG, MIT, GCT, Thiagarajar College of Engineering, and St.Xavier's Catholic College of Engineering (Nagercoil) participated in the event. Each college has two teams (A and B) consisting of six students each. Teams from our college were guided by Dr.K.V.Anusuya, Assistant Professor, Department of ECE. The PSG team B comprising of Rohan Xavier Sequeira (Team Captain) (III-ECE), Adithya.J.J (III-Automobile), Jagadheesvaran.T.S (III-ICE), Harivignesh.A (II-ECE), Mohamed Khizam (II-Mechanical) and Siddharth Ganesh Chandrasekar (II-CSE) won the 'Overall Champion' and 'Winning Alliance' awards. The team was mentored by Ms.Saranya.A.M from Caterpillar India. The overall champion award was awarded based on total points scored during the tournament, interview performance, engineering notebook maintenance and a technical report submitted. The winning Alliance award was awarded to the two teams that won the final match of the tournament. </div><br>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">DANFOSS INNOVATOR PROJECT AWARD 2016-17 </h4>
+                            </div>
+                            <p align="center"><br><img src="images/events/event-02.jpg"></p>
+                            <div class="modal-body">
+
+                                Two of our students from the ECE Department PraneshC (14L406)and VikasV (13L155)participated in the Danfoss Innovator Project Award 2016-17 and won the 1st prize in the UG category. Danfoss Innovator Project Award is an Inter-college competition designed for final year students in Under Graduate (UG) and Post Graduate (PG) courses. The participants were asked to choose problems from a theme of topics relevant to Danfoss' business. Theirproject, Mobile app based harmonic distortion analyzerprovides a user friendly and cost-effective solution for power quality monitoring. After the initial screening, the shortlisted nominations were reviewed by the Jury. A cash prize of Rs.1,50,000/- was awarded to them during the prize distribution ceremony held in Chennai.<br>
+
+                                Faculty Guide: Dr. D. Sivaraj, Assistant Professor, ECE Department<br>
+
+                                Danfoss Coordinator : Dr.M.Sundram, Assistant Professor, EEE Department </div><br>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+
+
+                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">MHRD Ranking 2016</h4>
+                            </div>
+                            <p align="center"><br><img src="images/events/event-04.jpg"></p>
+                            <div class="modal-body">
+
+                                PSG College of Technology (24th among Engineering Institutions) and PSG Pharmacy College (11th among Pharmacy Colleges) have achieved the rare distinction of finding place in the top rankings of National Institutional Ranking Framework (NIRF), prepared by MHRD, Government of India and published on 4th April 2016.<br>
+                                <p align="right"></p>
+
+                                Full details in the attached <a href="http://ows.psgtech.edu/nirf_booklet_FINAL_02_04_16_01-00PM.pdf"> NIRF booklet</a>
+                            </div><br>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+            </div>
+        </div>
+</div></main>
+<footer id="tg-footer" class="tg-footer tg-haslayout">
+<div class="tg-lineseparator">
+</div>
+    <div class="tg-footermiddlebar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="tg-widget tg-widgetcompanyinfo">
+              <div class="tg-widgetcontent"> <strong class="tg-logo"><a href="https://psgtech.edu"><img src="images/logo2.png" alt="image description"></a></strong>
+                <ul class="tg-infolist mt20">
+                  <li> <i class="icon-location"></i>
+                    <address>
+                    Post Box No. 1611<br>
+                    Peelamedu<br>
+                    Coimbatore - 641004
+                    </address>
+                  </li>
+                  <li> <i class="icon-phone-handset"></i> <span>0422-2572177, 2572477, 4344777</span> </li>
+                  <li> <i class="icon-printer"></i> <span>0422-2592277</span> </li>
+                  <li> <a href="cont.php"> <i class="icon-envelope"></i> <span>Contact Us</span> </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+           <div id="map"><a href="https://www.google.com/maps/place/PSG+College+Of+Technology/@11.024689,77.002127,13z/data=!4m5!3m4!1s0x0:0x137d95bfd8909293!8m2!3d11.0246887!4d77.0021273?hl=en-US"><img src="images/psggoogle.jpg" width="250" height="250" border="0"></a></div>
+
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="tg-widget tg-widgetcoursecategories">
+              <div class="tg-widgettitle">
+                <h3>My PSG</h3>
+              </div>
+              <div class="tg-widgetcontent">
+                <ul>
+              <!-- <li><a href="http://careers.psgtech.edu/">Careers @ PSG</a></li>
+			        <li><a href="http://mail.psgtech.ac.in/cgi-bin/openwebmail/openwebmail.pl">Webmail</a></li>
+              <li><a href="http://www.psgtech.edu/lib1/lib.html">Library</a></li> -->
+              <!-- <li><a href="http://careers.psgtech.edu/">Careers @ PSG</a></li> -->
+                  <li><a href="https://library.psgtech.ac.in/">Library</a></li> <!-- Modified by MKM-20-06-2022  -->
+                  <li><a href="psgcrs/">Community Radio</a></li>
+              <!--<li>PSG Tech News</li>
+                  <li>Virtual Tour</li> -->
+                  <li><a href="http://accounts.google.com/">PSG Mail</a></li>
+                  <li><a href="MandatoryCommittee.php">UGC/AICTE Mandatory Committees</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="tg-widget tg-widgetflickrgallery">
+              <div class="tg-widgettitle">
+                <h3>Glance at PSG</h3>
+              </div>
+              <div class="tg-widgetcontent">
+		            <a href="Glances/index.html"> <img src="images/glances2.jpg"> </a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tg-footerbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <span class="tg-copyright">Copyright © 2024 - PSG. All Rights Reserved</span> </div>
+         <!--  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <span class="tg-copyright pull-right">Designed & Developed by PSG Software Technologies & NMC</span> </div> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--************************************
+				Footer End
+		*************************************-->
+</div>
+<!--************************************
+			Wrapper End
+	*************************************-->
+<script src="js/vendor/jquery-library.js"></script> 
+<script src="js/vendor/bootstrap.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.pkgd.js"></script> 
+<script src="js/prettyPhoto.js"></script>
+<!-- <script src="js/countdown.js"></script> 22.05.2024 -->
+<script src="js/collapse.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/main.js"></script>
+<!--- READ TEXT <sript src="js/readtxt.js"></script> --></body></html>

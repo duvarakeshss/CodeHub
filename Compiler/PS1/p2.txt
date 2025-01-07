@@ -1,0 +1,1720 @@
+--
+--
+How to Automate an Excel Sheet in Python? - GeeksforGeeks
+{
+"@context": "https://schema.org",
+"@type": "Article",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"id": "https://www.geeksforgeeks.org/how-to-automate-an-excel-sheet-in-python/"
+},
+"headline": "How to Automate an Excel Sheet in Python?",
+"datePublished": "2021-01-13 11:51:58",
+"dateModified": "2022-07-11 12:36:21",
+"image": {
+"@type": "ImageObject",
+"url": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210113185326/How-to-Automate-an-Excel-Sheet-in-Python.png",
+"width": "1001",
+"height": "500"
+},
+"author": {
+"@type": "Organization",
+"name": "GeeksforGeeks",
+"url": "https://www.geeksforgeeks.org/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/logo-new-2.svg",
+"width": "301",
+"height": "40"
+}
+},
+"publisher": {
+"@type": "Organization",
+"name": "GeeksforGeeks",
+"url": "https://www.geeksforgeeks.org/",
+"logo": {
+"@type": "ImageObject",
+"url": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/logo-new-2.svg",
+"width": "301",
+"height": "40"
+}
+},
+"description": "Before you read this article and learn automation in Python....let's watch a video of Christian Genco (a talented programmer and an entrepreneur) explaining the importance of coding by taking the example of automation. You might have laughed loudly after watching this video and you surely, you might have understood the",
+"about": [
+{
+"@type": "Thing",
+"name": "Guestblogs"
+},
+{
+"@type": "Thing",
+"name": "Python"
+}
+]
+}
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://www.geeksforgeeks.org/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://www.geeksforgeeks.org/search/{search_term_string}/",
+"query-input": "required name=search_term_string"
+}
+}
+{
+"@context": "https://schema.org",
+"@type": "Organization",
+"name": "GeeksforGeeks",
+"url": "https://www.geeksforgeeks.org/",
+"logo": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200817185016/gfg_complete_logo_2x-min.png",
+"description": "A computer science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.",
+"founder": [
+{
+"@type": "Person",
+"name": "Sandeep Jain",
+"url": "https://in.linkedin.com/in/sandeep-jain-b3940815"
+}
+],
+"sameAs": [
+"https://www.facebook.com/geeksforgeeks.org/",
+"https://twitter.com/geeksforgeeks",
+"https://www.linkedin.com/company/1299009",
+"https://www.youtube.com/geeksforgeeksvideos/"
+]
+}
+var arrPostCat = new Array();
+var arrPostCatName="Python";
+arrPostCat.push('1710');
+arrPostCat.push('1789');
+var tIds = "1710,1789";
+var termsNames = "GBlog,Python,ProgrammingLanguage";
+var tIdsInclusiveParents = "1710,1789,2056"
+var domain = 1;
+var arrPost = new Array();
+var post_id = "526908";
+var post_type = "post";
+var post_slug = window.location.href;
+var ip = "64.252.71.21";
+var post_title = `How to Automate an Excel Sheet in Python?`;
+var post_status = "publish";
+var practiceAPIURL="https://practiceapi.geeksforgeeks.org/";
+var practiceURL="https://practice.geeksforgeeks.org/";
+var post_date = "2021-01-13 23:51:58";
+var commentSysUrl = "https://discuss.geeksforgeeks.org/commentEmbedV2.js";
+//var postAdApiUrlString = "";
+var link_on_code_run = '';
+var link_search_modal_top = '';
+var country_code_cf = "IN";
+var postAdApiUrlString = '2056/1710/1789/';
+{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.geeksforgeeks.org\/","sameAs":[],"@id":"https:\/\/www.geeksforgeeks.org\/#organization","name":"GeeksforGeeks","logo":"http:\/\/www.geeksforgeeks.org\/wp-content\/uploads\/gfg_200X200-1.png"}
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.geeksforgeeks.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+/*  */
+#wpadminbar{
+background: #ff0000 !important;
+}
+body.custom-background { background-color: #ffffff; }
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+AutoAds
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-9465609616171866",
+enable_page_level_ads: true
+});
+--
+@media (max-width:1043px) and (min-width:992px) {
+.hide-1043992 {
+display: none!important;
+}
+}
+.mobile-header-list-item{
+padding-left:30px;
+padding-right:10px;
+margin-top:5px;
+}
+.mobile-header-list{
+border-bottom: 1px solid rgba(158, 158, 158, 0.3) !important;
+}
+.mobile-header-list .dropdown-title{
+border-bottom: none !important;
+font-size: 16px!important;
+padding: 0px!important;
+padding-left: 45px!important;
+font-weight: normal;
+}
+.mobile-header-list .upside::after{
+transform: rotate(180deg);
+}
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-474915276');
+--
+// Dark mode script
+const gfgThemeList = Object.freeze({
+LIGHT: "gfgThemeLight",
+DARK: "gfgThemeDark"
+})
+const getThemeFromCookie = () = {
+let gfg_def_theme = "";
+let cookies = document.cookie;
+let cooks = cookies.split(";");
+for (let i = 0; i
+--
+Skip to content
+CoursesDSA to DevelopmentFor Working ProfessionalsData Structure &amp; Algorithm Classes (Live)System Design (Live)JAVA Backend Development(Live)DevOps(Live)Data Structures &amp; Algorithms in PythonFor StudentsInterview Preparation CourseGATE CS &amp; IT 2024Data Science (Live)Data Structure &amp; Algorithm-Self Paced(C++/JAVA)Master Competitive Programming(Live)Full Stack Development with React &amp; Node JS(Live)All CoursesFull Stack DevelopmentData Science ProgramTutorialsPython TutorialTaking Input in PythonPython OperatorsPython VariablesData TypesLoops in PythonPython FunctionsPython OOPS ConceptDSA in PythonPython ExercisesWeb Development in PythonDjangoFlaskPostmanWeb Scrapping in PythonData Structures &amp; AlgorithmsData StructuresArraysMatrixStringsLinked ListStackQueueBinary TreeBinary Search TreeHeapHashingGraphAdvanced Data StructureAlgorithmsAnalysis of AlgorithmsSearching AlgorithmsSorting AlgorithmsGreedy AlgorithmsDynamic ProgrammingGraph AlgorithmsRecursionBacktrackingDivide and ConquerMathematical AlgorithmsGeometric AlgorithmsBitwise AlgorithmsRandomized AlgorithmsComplete DSA TutorialCompany Wise SDE SheetsFacebook SDE SheetAmazon SDE SheetApple SDE SheetNetflix SDE SheetGoogle SDE SheetWipro Coding SheetInfosys Coding SheetTCS Coding SheetCognizant Coding SheetHCL Coding SheetCompetitive ProgrammingDSA Cheat SheetsTop 75 DSA QuestionsBlind 75DSA Sheet for BeginnersSDE SheetsFAANG Coding SheetLove Babbar SheetMass Recruiter SheetProduct-Based Coding SheetCompetitive ProgrammingSystem DesignSystem Design TutorialSoftware Design PatternsSystem Design RoadmapTop 10 System Design Interview QuestionsInterview CornerCompany PreparationTop TopicsPractice Company QuestionsInterview ExperiencesExperienced InterviewsInternship InterviewsCompetitive ProgrammingMultiple Choice QuizzesAptitude for PlacementsPuzzles for InterviewsLanguagesJavaC++R TutorialCC#SQLPerlGo LanguageWeb DevelopmentHTMLCSSJavaScriptTypeScriptReactJSNextJSNode.jsPHP100 Days of Web DevelopmentCS SubjectsEngineering MathematicsOperating SystemDBMSComputer NetworksComputer Organization and ArchitectureTheory of ComputationCompiler DesignDigital LogicSoftware EngineeringDevOps And LinuxDevOps TutorialGITAWSKubernetesDockerMicrosoft Azure TutorialGoogle Cloud PlatformDevOps RoadmapDevOps Interview QuestionsLinuxSchool LearningMathematicsClass 8 Study MaterialClass 9 Study MaterialClass 10 Study MaterialClass 11 Study MaterialClass 12 Study MaterialEnglish GrammarGfG SchoolCommerceGATEGATE Computer Science NotesLast Minute NotesGATE CS Solved PapersGATE CS Original Papers and Official KeysGATE CS 2025 SyllabusGATE DA 2025 SyllabusOther CS ExamsISROUGC NETGeeksforGeeks VideosData SciencePython TutorialR TutorialMachine LearningML TutorialML Projects100 Days of Machine LearningData Science using PythonData Science using RData Science PackagesPandas TutorialNumPy TutorialData VisualizationPython Data Visualization with PythonMatplotlib TutorialBokeh TutorialPlotly TutorialData Visualization with RData AnalysisData Analysis with PythonData Analysis with R100 Days of Data AnalyticsDeep LearningDeep Learning TutorialDeep Learning ProjectsNLP TutorialComputer VisionComputer Vision TutorialComputer Vision ProjectsInterview CornerMachine Learning Interview QuestionDeep Learning Interview QuestionNLP Interview QuestionPython Interview QuestionsTop 50 R Interview QuestionsPracticeAll DSA ProblemsProblem of the DayGFG SDE SheetCurated DSA ListsBeginner's DSA SheetLove Babbar SheetTop 50 Array ProblemsTop 50 String ProblemsTop 50 Tree ProblemsTop 50 Graph ProblemsTop 50 DP Problems
+.hidden{
+display:none !important;
+}
+.notification-bell-icon::after {
+background-position: -43px -2992px;
+}
+#toggleButton{
+display:block !important;
+}
+Notifications
+All
+View All
+Notifications
+Mark all as read
+All
+Unread
+Read
+You're all caught up!!
+var m = false;
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+setTimeout(function(){
+if (jQuery( window ).width() = 768 && m == true){
+m = false;
+jQuery('#g_translater').detach().prependTo('.google-translate-parent-element');
+}
+});
+--
+Python CoursePython BasicsInterview QuestionsPython QuizPopular PackagesPython ProjectsPractice PythonAI With PythonLearn Python3Python AutomationPython Web DevDSA with PythonPython OOPsListsStringsDictionaries
+▲
+if(post_slug.includes('premium-plans-payment/') || post_slug.includes('premium-plans/')){
+$(".header-main__slider").remove();
+}
+//getting tags for the page type data
+let mobileView = false;
+let pageTags = JSON.parse('null');
+let allTags = JSON.parse('["GBlog","Python","ProgrammingLanguage"]');
+window.have_dsa_term = false;
+// var practiceTab = ;
+.wrapper {
+flex-direction: column !important;
+}
+/* spinner css */
+@keyframes spinner {
+to {transform: rotate(360deg);}
+}
+.spinner:before {
+content: '';
+box-sizing: border-box;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 20px;
+height: 20px;
+margin-top: -10px;
+margin-left: -10px;
+border-radius: 50%;
+border: 2px solid #ccc;
+border-top-color: #000;
+animation: spinner .6s linear infinite;
+}
+.report-loader{
+position: relative;
+}
+.report-loader.spinner{
+margin-left: 16px;
+}
+.badges{
+display: flex;
+align-items: center;
+position: relative;
+}
+.badges .gfg-badge-icon.md::after{
+transform: scale(0.25);
+position:relative;
+top: 2px;
+left: -2px;
+}
+.sep{
+margin: 0px 5px;
+font-size: 20px;
+color: var(--badge-name-color);
+}
+.pub-count{
+font-size: 14px;
+font-family: var(--font-secondary);
+}
+.badge-details{
+display:none;
+}
+.badges{
+cursor: pointer;
+position: relative;
+/* width: 0px;
+height: 20px;
+top: -32px; */
+}
+.badge-icon{
+display: flex;
+align-items: center;
+}
+.badge-content{
+margin-left: 9px;
+}
+.badge-name{
+color: var(--badge-nam-color);
+font-weight: 600;
+font-size: 16px;
+text-transform: capitalize;
+}
+.badge-data{
+color: #A5A4A4;
+font-size: 10px;
+}
+.badges:hover .badge-details{
+display: block;
+background: var(--badge-bg);
+padding: 10px 18px 10px 18px;
+position: absolute;
+width: 175px;
+top: -10px;
+z-index: 10;
+left: 112%;
+box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+border-radius: 5px;
+/* transform-origin: top right; */
+}
+.badge-details::before {
+content: "";
+position: absolute;
+transform: rotate(90deg);
+/* transform-origin: right; */
+left: -6px;
+top: 50%;
+margin-left: -17px;
+border-width: 12px;
+border-style: solid;
+border-color: var(--badge-bg) transparent transparent transparent;
+margin-top: -12px;
+}
+.badge-icon .icon{
+border: 1px solid var(--icon-border-color);
+padding: 4px 3px;
+border-radius: 4px;
+width: 22px;
+height: 24px;
+position: relative;
+}
+.b-icon-pos{
+position: relative;
+top: -34px;
+left: -34px;
+}
+/* article viewer */
+.article--viewer .a-wrapper{
+margin-top: 0px !important;
+}
+.content{
+padding-top: 10px !important;
+}
+.u-name{
+font-size: 14px;
+}
+.article--viewer_content .a-wrapper .content{
+padding-bottom: 10px !important;
+}
+.likeTooltipBottom{
+font-size: 14px;
+}
+@media (max-width: 434px) {
+.article-buttons.show-bg{
+margin-top: 56px !important;
+}
+}
+@media (max-width: 730px),
+((min-width: 992px) and (max-width:1100px))  {
+.article--viewer .media{
+position: relative;
+}
+.article--viewer .media{
+margin-bottom: 0px !important;
+}
+.badges:hover .badge-details{
+top: -56px;
+left: 62px;
+}
+.badge-details::before{
+transform: rotate(0deg);
+left: 10%;
+top: 117%;
+}
+.article-buttons.show-bg{
+margin-top: 22px;
+top: 0px !important;
+}
+}
+@media ((min-width:731px) and (max-width:1223px)) {
+.article-buttons.show-bg{
+top: 18px;
+}
+}
+@media ((min-width:993px) and (max-width:1190px)) {
+.article--viewer .media{
+position: relative;
+}
+.article--viewer .media{
+margin-bottom: 25px !important;
+}
+}
+function getCookie(name) {
+function escape(s) { return s.replace(/([.*+?\^$(){}|\[\]\/\\])/g, '\\$1'); }
+var match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape(name) + '=([^;]*)'));
+return match ? match[1] : null;
+}
+Open In App
+var consentValue = localStorage.getItem("gfg_cc");
+var isIOS = !!navigator.platform && /iPad|iPhone|iPod|MacIntel/.test(navigator.platform) && navigator.maxTouchPoints  0;
+const isSafari = navigator.userAgent.indexOf("Safari")  -1;
+const isMozilla = navigator.userAgent.indexOf("Mozilla")  -1;
+if(consentValue){
+if(window.innerHeight  window.innerWidth && navigator.maxTouchPoints  1 && (isSafari || isMozilla || navigator.userAgentData.mobile)){
+$('.openInApp').css({
+display: "block"
+});
+$('#scrollTopBtn').css({
+bottom: "44px"
+});
+//adding a new class to check stats for clicks on iOS and Android
+isIOS ? jQuery('.openInAppLink').addClass("oia-iOS") : $('.openInAppLink').addClass("oia-android");      //for openInApp Link
+}
+}
+.openInApp{
+display: none;
+bottom: 0px;
+width: 100%;
+position: fixed;
+z-index: 1025;
+opacity: 0.93;
+}
+.openInAppLink{
+height: 44px;
+background: var(--color-gfg);
+font-weight: bold;
+display: block;
+text-align: center;
+padding: 12px;
+font-size: large;
+}
+.openInAppLink, .openInAppLink:hover, .openInAppLink:active, .openInAppLink:visited, .openInAppLink:focus {
+text-decoration:none;
+}
+companyTagsArray = JSON.parse('[]');
+categoryTagsArray = JSON.parse('["python"]');
+--
+160 Days of DSAShare Your ExperiencesHow to Automate an Excel Sheet in Python?How to Automate Google Sheets with Python?Python | How to copy data from one excel sheet to anotherPython Script to Automate Refreshing an Excel SpreadsheetHow Can I Enable Python in Excel?How to Convert JSON to Excel in PythonHow to Automate the Storage using Dropbox API in Python ?How To Embed Python Code In Batch ScriptHow to replace a word in excel using Python?How to Convert Excel to XML Format in Python?How to add timestamp to excel file in PythonHow to convert a Python datetime.datetime to excel serial date numberHow to sort date in excel using Pandas?How to Find the First Empty Row of an Excel File in PythonPython | Convert an HTML table into excelExcel Automation with Openpyxl in PythonWriting to an excel sheet using PythonFinding First Empty Column in an Excel Sheet using PythonExport Data From Mysql to Excel Sheet Using PythonDSA to Development Course
+How to Automate an Excel Sheet in Python?
+Last Updated :
+11 Jul, 2022
+Summarize
+Comments
+Improve
+--
+Suggest changes
+Like Article
+Like
+--
+Save
+--
+Share
+Report
+--
+Follow
+Before you read this article and learn automation in Python….let’s watch a video of Christian Genco (a talented programmer and an entrepreneur) explaining the importance of coding by taking the example of automation.
+You might have laughed loudly after watching this video and you surely, you might have understood the importance of automation in real life as well. Let’s come to the topic now…
+We all know that Python is ruling all over the world, and we also know that Python is beginner’s friendly and it’s easy to learn in comparison to other languages. One of the best things you can do with Python is Automation.
+Consider a scenario that you’re asked to create an account on a website for 30,000 employees. How would you feel? Surely you will be frustrated doing this task manually and repeatedly. Also, this is going to take too much time which is not a smart decision.
+Now just imagine the life of employees who are into the data entry jobs. Their job is to take the data from tables such as Excel or Google Sheet and insert it somewhere else. They browse different websites and magazine, they collect the data from there, and then they insert it into the database. They also need to do the calculations for the entries.
+Generally, the income is based on the performance in this job. More entries, higher salary (of course everyone wants a higher salary in their job).
+But don’t you think that it’s boring to do the same kind of stuff repeatedly?
+Now the question is….“How can I do it fast?”, “How can I automate my work?”
+Instead of doing these kinds of tasks manually, just spend an hour coding and automate these kinds of stuff to make your life easier. You can automate your tedious task by just writing fewer lines of code in Python.
+In this blog, we will create a small project to learn automation in Python. If you’re a beginner then you may prefer to watch some videos to learn the automation in Python and reading this blog might be a boring task for you but here we will go through step by step to explain everything in detail and to make things easier for you.
+It will be great if you already know the core concept of Python. We will take an example of an Excel sheet with some entries, and we will learn the automation process. We are going to write a Python program that can process thousands of spreadsheets in under a second. Excited??? Let’s get started…
+Intro of The Task
+Processing or updating thousands of spreadsheets manually will take too much time. It may take hours, days, or even months. We will write a Python program to automate this task. We will work on a spreadsheet given in the below picture.
+In this spreadsheet, we have the record for all kinds of transactions, but let’s say due to an error (human error or system error), the price for the product listed in the third column is wrong. Let’s say we need to decrease the price by 10% (multiply the price by 0.9 and recalculate the value). You can do this task manually by using a mathematical formula in the fourth column but it will take too much time (maybe 1 week or two weeks) if there are thousands of records.
+We will write a python program to automate this process. Also, we will add a chart to it. Our python program will do this task for us in a matter of seconds.
+Let’s Get Into The Coding Zone
+To work on this Excel sheet we are going to use a library openpyxl. Create a folder in your directory, give it a name and install the openpyxl package by executing the following command in your terminal.
+pip install openpyxl
+Now we can import this package to work on our spreadsheet. Before that add the spreadsheet in your project folder. Now create a file app.py in your folder and write down the code given below.
+Python
+import openpyxl as xl
+from openpyxl.chart import BarChart, Reference
+wb = xl.load_workbook('python-spreadsheet.xlsx')
+sheet = wb['Sheet1']
+for row in range(2, sheet.max_row + 1):
+cell = sheet.cell(row, 3)
+corrected_price = float(cell.value.replace('$','')) * 0.9
+corrected_price_cell = sheet.cell(row, 4)
+corrected_price_cell.value = corrected_price
+values = Reference(sheet, min_row=2, max_row=sheet.max_row, min_col=4, max_col=4)
+chart = BarChart()
+chart.add_data(values)
+sheet.add_chart(chart, 'e2')
+wb.save('python-spreadsheet2.xlsx')
+Let’s Understand the Above Code
+We are going to explain the code step by step written above to understand the complete process.
+Step 1. To work on our spreadsheet import openpyxl package (we have used xl alias to make our code cleaner and shorter).  Also, to add a chart to our spreadsheet, we need to import two classes BarChart and Reference.
+import openpyxl as xl
+from openpyxl.chart import BarChart, Reference
+Step 2. Now we need to load the Excel workbook python-spreadhsheet.xlsx. Write down the code given below. wb returns the object and with this object, we are accessing Sheet1 from the workbook.
+wb = xl.load_workbook('python-spreadsheet.xlsx')
+sheet = wb['Sheet1']
+Step 3. To access the entries from rows 2 to 4 in the third column (entry for price column) we need to add a for loop in it. We are saving this entry in a variable cell.
+for row in range(2, sheet.max_row + 1):
+cell = sheet.cell(row, 3)
+Step 4. Now we need to calculate the corrected prices. So we are multiplying the values saved in the cell variable with 0.9. Once the calculation is done we need to add all the corrected prices in a new column (column 4). To add a new column we will get a reference to the cell in the given row but in the fourth column. Once the cell is created, we need to set the corrected price values in this cell (fourth column).
+corrected_price = float(cell.value.replace('$','')) * 0.9
+corrected_price_cell = sheet.cell(row, 4)
+corrected_price_cell.value = corrected_price
+Step 5. Half of the work is done. We have calculated the updated price, and we have added that in the fourth column. Now we need to add a chart to the current sheet. To create a chart we need to select a range of values.
+In this project, we will select the values in the fourth column (updated prices) and we will use that in our chart (we just need a bunch of numbers to create a chart, so we have taken the example of the fourth column. This value can be anything as per requirement).
+We need to use the reference class to select a range of values. We are going to add five arguments to this constructor. The first argument is the sheet we are working on. The next two arguments min_row = 2, and max_row= sheet.max_row will select the cells from row 2 to row 4. To select the entries from only column fourth we need to pass another two arguments min_col=4 and max_col=4. Store the result in the variable ‘values’.
+values = Reference(sheet, min_row=2, max_row=sheet.max_row, min_col=4, max_col=4)
+Step 6. Now we are ready to create a chart. We will create an instance ‘chart’ for the class BarChart. Once this is created add the values in this chart. After that add this chart to the sheet into row 2 and column 5 (e2).
+chart = BarChart()
+chart.add_data(values)
+sheet.add_chart(chart, 'e2')
+Step 7. Now we need to save all updated entries and the chart we have created in the above code. We will save this in a new file python-spreadsheet2.xlsx because we don’t’ want to accidentally overwrite the original file in case our program has a bug.
+Run your program and you’re good to go. A newly updated file python-spreadhsheet2.xlsx will be created for you with updated prices and charts. Below is the screenshot for the same.
+Step 8. Our program is complete but if you use the above code then it’s not going to automate the process of thousands of spreadsheets. This program is only relying on a specific file that is python-spreadsheet.xlsx.
+To make it work for several spreadsheets we will reorganize this code, and we will move the code inside a function. This function will take the name of the file as an input and it will execute the process. Below is the updated code for the same.
+Python
+import openpyxl as xl
+from openpyxl.chart import BarChart, Reference
+def process_workbook(filename):
+wb = xl.load_workbook(filename)
+sheet = wb['Sheet1']
+for row in range(2, sheet.max_row + 1):
+cell = sheet.cell(row, 3)
+corrected_price = float(cell.value.replace('$', '')) * 0.9
+corrected_price_cell = sheet.cell(row, 4)
+corrected_price_cell.value = corrected_price
+values = Reference(sheet, min_row=2, max_row=sheet.max_row, min_col=4, max_col=4)
+chart = BarChart()
+chart.add_data(values)
+sheet.add_chart(chart, 'e2')
+wb.save(filename)
+Github Link for the Code with Spreadsheet Attached: Python Automation
+Final Thought
+That was just one example of using Python to automate repetitive boring tasks. But remember that automation is not just about Excel spreadsheets. There are so many things we can automate. You can search on various sites such as Github and you can automate a lot of things with Python.
+Comment
+More info
+Next Article
+8 Min Read&ensp;|&ensp;Java --
+anuupadhyay
+Follow
+Like Article --
+Improve
+Similar Reads
+Python Script to Automate Refreshing an Excel Spreadsheet
+In this article, we will learn how we can automate refreshing an Excel Spreadsheet using Python. So to open the Excel application and workbooks we are going to use the pywin32 module. You can install the module using the below code: pip install pywin32 Then we are going to open the Excel application using the win32com.client.Dispatch() method and w
+1 min read
+Writing to an excel sheet using Python
+Using xlwt module, one can perform multiple operations on spreadsheet. For example, writing or modifying the data can be done in Python. Also, the user might have to go through various sheets and retrieve data based on some criteria or modify some rows and columns and do a lot of work. Let's see how to create and write to an excel-sheet using Pytho
+2 min read
+Python | Plotting charts in excel sheet using openpyxl module | Set - 1
+Prerequisite: Reading &amp; Writing to excel sheet using openpyxl Openpyxl is a Python library using which one can perform multiple operations on excel files like reading, writing, arithmetic operations and plotting graphs. Let's see how to plot different charts using realtime data. Charts are composed of at least one series of one or more data poi
+6 min read
+Python | Plotting charts in excel sheet using openpyxl module | Set – 2
+Prerequisite: Python | Plotting charts in excel sheet using openpyxl module | Set – 1 Openpyxl is a Python library using which one can perform multiple operations on excel files like reading, writing, arithmetic operations and plotting graphs. Charts are composed of at least one series of one or more data points. Series themselves are comprised of
+6 min read
+Python | Plotting charts in excel sheet using openpyxl module | Set 3
+Prerequisite : Plotting charts in excel sheet using openpyxl module Set - 1 | Set – 2Openpyxl is a Python library using which one can perform multiple operations on excel files like reading, writing, arithmetic operations and plotting graphs. Charts are composed of at least one series of one or more data points. Series themselves are comprised of r
+7 min read
+Python |  Plotting Area charts in excel sheet using XlsxWriter module
+Prerequisite: Create and write on an excel file XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot different charts using realtime data. Charts are composed of at least one series of one or more data points. Series the
+6 min read
+Python |  Plotting bar charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel file.XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot different type of Bar charts using realtime data. Charts are composed of at least one series of one or more data points
+6 min read
+Python | Plotting Radar charts in excel sheet using XlsxWriter module
+Prerequisite:Create and Write on excel file XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot different type of Radar charts using realtime data. Charts are composed of at least one series of one or more data points.
+6 min read
+Python | Plotting scatter charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel file. XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot different type of Scatter charts using realtime data. Charts are composed of at least one series of one or more data p
+10 min read
+Python | Plotting column charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel file.XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot different type of Column charts using realtime data. Charts are composed of at least one series of one or more data poi
+7 min read
+Python | Plotting Pie charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel sheet XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot different types of pie charts using realtime data. Charts are composed of at least one series of one or more data poin
+5 min read
+Python | Plotting Doughnut charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel sheet XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot different variety of doughnut charts using realtime data. Charts are composed of at least one series of one or more da
+7 min read
+Python | Plotting Stock charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel sheet XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot Stock charts using realtime data. Charts are composed of at least one series of one or more data points. Series themse
+3 min read
+Python | Plotting Line charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel sheet XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot Line charts using realtime data. Charts are composed of at least one series of one or more data points. Series themsel
+3 min read
+Python | Plotting Combined charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel sheetXlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations, and plotting graphs. Let’s see how to plot Combined charts using real-time data. Charts are composed of at least one series of one or more data points. Series th
+5 min read
+Python | Plotting Different types of style charts in excel sheet using XlsxWriter module
+Prerequisite: Create and Write on an excel sheet XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot different types of Style charts, using realtime data. Charts are composed of at least one series of one or more data p
+3 min read
+Python | Adding a Chartsheet in an excel sheet using XlsxWriter module
+XlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations, and plotting graphs. Let’s see how to add a chartsheet to an excel sheet and plot a line chart on it, using real-time data. Charts are composed of at least one series of one or more data points. Series themsel
+3 min read
+Python | Plotting column charts in excel sheet with data tables using XlsxWriter module
+Prerequisite: Create and Write on an excel sheetXlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot charts with Data tables using realtime data.Charts are composed of at least one series of one or more data points. Seri
+5 min read
+Python | Plotting charts in excel sheet with Data Tools using XlsxWriter module | Set - 1
+Prerequisite: Create and Write on an excel sheetXlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot charts with different types of Data Tools using realtime data. Charts are composed of at least one series of one or mor
+7 min read
+Python | Plotting charts in excel sheet with data tools using XlsxWriter module | Set – 2
+Prerequisite: Create and Write on an excel sheetXlsxWriter is a Python library using which one can perform multiple operations on excel files like creating, writing, arithmetic operations and plotting graphs. Let’s see how to plot charts with different types of Data Tools using realtime data.Charts are composed of at least one series of one or more
+7 min read
+Python | How to copy data from one excel sheet to another
+In this article, we will learn how to copy data from one excel sheet to destination excel workbook using openpyxl module in Python. For working with excel files, we require openpyxl, which is a Python library that is used for reading, writing and modifying excel (with extension xlsx/xlsm/xltx/xltm) files. It can be installed using the following com
+3 min read
+How to Create a Pivot table with multiple indexes from an excel sheet using Pandas in Python?
+The term Pivot Table can be defined as the Pandas function used to create a spreadsheet-style pivot table as a DataFrame. It can be created using the pivot_table() method. Syntax: pandas.pivot_table(data, index=None) Parameters: data : DataFrame index: column, Grouper, array, or list of the previous index: It is the feature that allows you to group
+2 min read
+Finding First Empty Column in an Excel Sheet using Python
+Excel is a spreadsheet in a computer application that is designed to add, display, analyze, organize, and manipulate data arranged in rows and columns. It is the most popular application for accounting, analytics, data presentation, etc. In this article, we will learn how to store user input in an excel sheet using Python. Methods used for taking u
+3 min read
+Export Data From Mysql to Excel Sheet Using Python
+We are given a MySQL database and our task is to export the data into an excel sheet using Python. In this article, we will see how to export data from MySQL to Excel Sheets using Python. Export Data From Mysql to Excel Sheet Using PythonBelow are some of the ways by which we can export data from MySQL to an Excel sheet using Python: Export Data Fr
+3 min read
+Find the profit and loss in the given Excel sheet using Pandas
+In these articles, we will discuss how to extract data from the Excel file and find the profit and loss at the given data. Suppose our Excel file looks like then we have to extract the Selling Price and Cost Price from the column and find the profit and loss and store it into a new DataFrame column. To get the excel file used click here. So, Let's
+2 min read
+Find the profit and loss percent in the given Excel sheet using Pandas
+In these articles, let's discuss how to extract data from the Excel file and find the profit percent and loss percent at the given data. Suppose our Excel file looks like then we have to extract the Selling Price and Cost Price from the column and find the profit percent and loss percent and store it into a new DataFrame column. To get the excel fi
+2 min read
+Add New Sheet to Excel Using Pandas
+The article aims to implement a function in Python using Pandas to add a new sheet to an existing Excel file, facilitating efficient data organization and management within Excel workbooks. Using openpxl to add a new sheet to Excel Using PandasPandas offer a seamless interface for manipulating Excel files programmatically that allows automated and
+2 min read
+Automate linkedin connections using Python
+LinkedIn connections are a very important thing for an IT professional, so we need to send connection requests to a lot of people who can be useful to us. But sometimes sending connection requests one at a time can be a little annoying and hectic. It would be nice to automate this work but How? Python to rescue!In this article, we will learn how to
+3 min read
+Automate getter-setter generator for Java using Python
+Encapsulation is defined as the wrapping up of data under a single unit. Encapsulation can be achieved by declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables. These public methods are called getters and setters. In practice, it is quite a time consuming and repetitive pr
+3 min read
+How to Automate VPN to change IP location on Ubuntu using Python?
+To Protect Our system from unauthorized users Access you can spoof our system's IP Address using VPN service provided by different organizations. You can set up a VPN on your system for free. After you set up and log in to the VPN over the Ubuntu system you need to manually connect with different VPN servers after some duration. We can automate it
+3 min read
+Article Tags :
+GBlog
+Python
+Practice Tags :
+python
+Like
+.article--container_content{
+align-items: unset !important;
+}
+.sideBar {
+position: sticky !important;
+}
+.gfg-icon_switch::after {
+background-position: -40px -281px !important;
+}
+.gfg-icon_transaction::after {
+background-position: -40px -321px !important;
+}
+.header-main__profile.selected+.mega-dropdown{
+width: 225px !important;
+}
+#courses-container .course-price{
+display:none;
+}
+/* .side--container_wscard .card-content .content .meta:empty, .practiceBannerFromPlugin{
+display:none !important;
+} */
+.side--container_wscard .card-content .content .meta{
+display:block !important;
+}
+.side--container_wscard .card-content .content .meta p{
+background-color: rgba(254, 212, 91, 0.6);
+font-size: 10pt;
+font-weight: bold;
+display: inline-block;
+color: var(--color-black);
+margin-top: 15px;
+padding: 0px 5px;
+}
+#try-it{
+display:initial !important;
+}
+#try-it .try-it-div{
+line-height: 34px;
+}
+.gfg-icon_dark-mode::after {
+background-position: -40px -680px;
+}
+.side--container_wscard .head{
+font-size: 14px !important;
+}
+.nineDot-menu, .gfg-icon_ndot{
+display: none;
+}
+#text-15{
+flex-direction: column;
+}
+.mtq_correct_marker, .mtq_wrong_marker{
+display: none;
+}
+.sidebar_wrapper  :last-child{
+margin: unset !important;
+margin-left: 5px !important;
+margin-top: 20px !important;
+top: 70px !important;
+}
+.darkMode-wrap{
+bottom:1% !important;
+}
+#secondary .textwidget{
+margin-left: auto;
+margin-right: 0;
+text-align: right;
+}
+#secondary .widget_text:last-child{
+top: 70px !important;
+}
+@media(max-width:768px){
+#scrollTopBtn{
+display:none !important;
+}
+}
+.rightbar_loggedin_promo_cta{
+display:flex;
+cursor:pointer;
+margin-bottom:20px;
+}
+248k+ interested Geeks
+Java Programming Online Course [Complete Beginner to Advanced]
+Beginner to Advance    --
+Explore
+300k+ interested Geeks
+Data Structures &amp; Algorithms in Python - Self Paced
+Beginner to Advance    --
+Explore
+224k+ interested Geeks
+Python Full Course Online - Complete Beginner to Advanced
+Beginner and Intermediate    --
+Explore
+.right-bar-explore-more{ visibility: hidden; min-height: 230px;text-align:left;min-width:300px;max-width:300px; padding-left: 19px; padding-right: 25px; margin-top: 20px;}
+.right-bar-explore-more .title{text-align:left;font-size:20px; font-weight: 600; line-height: 22px; color:var(--em-heading);padding:14px 0;font-family:var(--font-primary)}
+.right-bar-explore-more .rightbar-sticky-ul {list-style: disc outside; padding-left: 17px;}
+.right-bar-explore-more li{font-size: 14px !important;font-weight: 400;line-height: 18px !important;color: var(--em-text);margin: 14px 0;font-family:var(--font-primary);}
+.right-bar-explore-more li::marker{color: var(--em-text) !important;}
+.right-bar-explore-more .rightbar-sticky-ul a{text-align:left !important; color: var(--em-text); display: block !important;}
+.right-bar-explore-more .rightbar-sticky-ul a:hover{text-decoration:underline;color:var(--em-link)!important;}
+.right-bar-explore-more hr {margin: 0;background-color: var(--tn-hr);}
+@media (max-width: 991px){
+.right-bar-explore-more{
+width: 85%;
+margin: auto;
+margin-top: 20px;
+max-width: unset;
+display: none !important;
+}
+#text-18 .textwidget{
+width: 100%;
+}
+}
+var rightBarExploreMoreList = `Python Tutorial | Learn Python Programming LanguageTop 50+ Python Interview Questions and Answers (Latest 2024)Enumerate() in Python7 Different Ways to Take a Screenshot in Windows 10Python Projects - Beginner to Advanced`
+Explore More
+$(document).ready(function() {
+var isfollowingApiCall = false;
+if ($('.follow-btn').length) {
+var articleRecommendedTop = $(".article--recommended").offset().top;
+var articleRecommendedBottom = articleRecommendedTop + $(".article--recommended").outerHeight();
+$(window).scroll(function() {
+var top_of_element = $(".article--recommended").offset().top;
+var bottom_of_element = $(".article--recommended").offset().top + $(".article--recommended").outerHeight();
+var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+var top_of_screen = $(window).scrollTop();
+if ((bottom_of_screen  top_of_element && top_of_screen  articleRecommendedTop && top_of_screen  articleRecommendedBottom)) {
+if (!isfollowingApiCall) {
+isfollowingApiCall = true;
+setTimeout(function(){
+if (loginData && loginData.isLoggedIn) {
+if (loginData.userName !== $('#followAuthor').val()) {
+is_following();
+} else {
+$('.profileCard-profile-picture').css('background-color', '#E7E7E7');
+}
+} else {
+$('.follow-btn').removeClass('hideIt');
+}
+}, 3000);
+}
+}
+});
+}
+$(".accordion-header").click(function() {
+var arrowIcon = $(this).find('.bottom-arrow-icon');
+arrowIcon.toggleClass('rotate180');
+});
+});
+window.isReportArticle = false;
+function report_article(){
+if (!loginData || !loginData.isLoggedIn) {
+const loginModalButton = $('.login-modal-btn')
+if (loginModalButton.length) {
+loginModalButton.click();
+}
+return;
+}
+if(!window.isReportArticle){
+//to add loader
+$('.report-loader').addClass('spinner');
+jQuery('#report_modal_content').load(gfgSiteUrl+'wp-content/themes/iconic-one/report-modal.php', {
+PRACTICE_API_URL: practiceAPIURL,
+PRACTICE_URL:practiceURL
+},function(responseTxt, statusTxt, xhr){
+if(statusTxt == "error"){
+alert("Error: " + xhr.status + ": " + xhr.statusText);
+}
+});
+}else{
+window.scrollTo({ top: 0, behavior: 'smooth' });
+$("#report_modal_content").show();
+}
+}
+function closeShareModal() {
+const shareOption = document.querySelector('[data-gfg-action="share-article"]');
+shareOption.classList.remove("hover_share_menu");
+let shareModal = document.querySelector(".hover__share-modal-container");
+shareModal && shareModal.remove();
+}
+function openShareModal() {
+closeShareModal(); // Remove existing modal if any
+let shareModal = document.querySelector(".three_dot_dropdown_share");
+shareModal.appendChild(Object.assign(document.createElement("div"), { className: "hover__share-modal-container" }));
+document.querySelector(".hover__share-modal-container").append(
+Object.assign(document.createElement('div'), { className: "share__modal" }),
+);
+document.querySelector(".share__modal").append(Object.assign(document.createElement('h1'), { className: "share__modal-heading" }, { textContent: "Share to" }));
+const socialOptions = ["LinkedIn", "WhatsApp", "Copy Link"];
+socialOptions.forEach((socialOption) = {
+const socialContainer = Object.assign(document.createElement('div'), { className: "social__container" });
+const icon = Object.assign(document.createElement("div"), { className: `share__icon share__${socialOption.split(" ").join("")}-icon` });
+const socialText = Object.assign(document.createElement("span"), { className: "share__option-text" }, { textContent: `${socialOption}` });
+const shareLink = (socialOption === "Copy Link") ?
+Object.assign(document.createElement('div'), { role: "button", className: "link-container CopyLink" }) :
+Object.assign(document.createElement('a'), { className: "link-container" });
+if (socialOption === "LinkedIn") {
+shareLink.setAttribute('href', `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`);
+shareLink.setAttribute('target', '_blank');
+}
+if (socialOption === "WhatsApp") {
+shareLink.setAttribute('href', `https://api.whatsapp.com/send?text=${window.location.href}`);
+shareLink.setAttribute('target', "_blank");
+}
+shareLink.append(icon, socialText);
+socialContainer.append(shareLink);
+document.querySelector(".share__modal").appendChild(socialContainer);
+//adding copy url functionality
+if(socialOption === "Copy Link") {
+shareLink.addEventListener("click", function() {
+var tempInput = document.createElement("input");
+tempInput.value = window.location.href;
+document.body.appendChild(tempInput);
+tempInput.select();
+tempInput.setSelectionRange(0, 99999); // For mobile devices
+document.execCommand('copy');
+document.body.removeChild(tempInput);
+this.querySelector(".share__option-text").textContent = "Copied"
+})
+}
+});
+document.querySelector(".hover__share-modal-container").addEventListener("mouseover", () = document.querySelector('[data-gfg-action="share-article"]').classList.add("hover_share_menu"));
+}
+function toggleLikeElementVisibility(selector, show) {
+document.querySelector(`.${selector}`).style.display = show ? "block" : "none";
+}
+function closeKebabMenu(){
+document.getElementById("myDropdown").classList.toggle("show");
+}
+$(document).ready(function() {
+$("#showMoreTagsBtn").click(function() {
+$('.articles-hidden-tags').show();
+$(this).hide();
+});
+$("#showMorePracticeTagsBtn").click(function() {
+$(".practice-tags li:nth-child(n+5)").show();
+$(this).hide();
+});
+});
+.grecaptcha-badge {
+visibility: hidden !important;
+}
+.thank-you-message {
+height: 100%;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.thank-you-message-content {
+margin-top: 17px;
+font: 400 20px var(--font-secondary);
+color: var(--improve-modal-text);
+line-height: 180%;
+text-align: center;
+}
+.thank-you-message-content h2{
+font-family: var(--font-secondary);
+}
+.all-footer-information{
+width: 100% !important;;
+}
+.footer-wrapper_links-list{
+margin-block-start: 0em !important;
+width: 16% !important;
+padding-inline-start: 18px !important;
+}
+.link-head{
+margin-bottom: 0px;
+}
+@media only screen and (max-width:1340px) {
+.footer-wrapper_links-list{
+overflow-wrap: break-word;
+}
+}
+@media screen and (min-width: 991px)  {
+.all-footer-information{
+padding-left:15px;
+}
+}
+@media only screen and (max-width:980px) {
+.footer-wrapper_branding-address{
+padding-top: 10px;
+}
+}
+@media (max-width: 750px) {
+.thank-you-message-content{
+font-size: 14px;
+line-height: 170%;
+}
+}
+/* CSS variable meant to handle the dark and light mode icon for three 90 event in header courses dropdown */
+:root{
+--three90headericon : url('https://media.geeksforgeeks.org/auth-dashboard-uploads/three90daylogocompressed.svg');
+--three90headericonposition : 0px -40px;
+--three90leftbarimggrid : url('https://media.geeksforgeeks.org/auth-dashboard-uploads/three90leftbarspritecompressed.svg');
+--three90leftbarimgposition : -5px -55px;
+--three90leftbarbgcolour : #b3abd0;
+}
+body[data-dark-mode="true"]{
+--three90leftbarimgposition : -6px 1px;
+--three90headericonposition : 0px 0px;
+--three90leftbarbgcolour: #8c82b9;
+}
+.three90leftbarimg{
+margin-left: -5px;
+height: 30px;
+background-image: var(--three90leftbarimggrid);
+background-repeat: no-repeat;
+background-position: var(--three90leftbarimgposition);
+background-size: 212px;
+}
+.courseTabShimmer{
+position: absolute;
+height: 110%;
+width: 0;
+opacity: .7;
+-webkit-animation: courseShimmer 2s cubic-bezier(0,0,.07,.61) infinite;
+animation: courseShimmer 2s cubic-bezier(0,0,.07,.61) infinite;
+box-shadow: 0 0 25px 5px #dddcdc;
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+padding:0px !important;
+border:unset !important;
+}
+@keyframes courseShimmer{
+0% {
+left: 0;
+}
+55% {
+left: 100%;
+}
+99% {
+left: 110%;
+}
+}
+Improve your Coding Skills with Practice
+Try It!
+--
+&times;
+--
+Corporate &amp; Communications Address:- A-143, 7th Floor, Sovereign Corporate Tower, Sector- 136, Noida, Uttar Pradesh (201305) | Registered Address:- K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305
+CompanyAbout UsLegalCareersIn MediaContact UsAdvertise with usGFG Corporate SolutionPlacement Training ProgramExploreJob-A-Thon Hiring ChallengeHack-A-ThonGfG Weekly ContestOffline Classes (Delhi/NCR)DSA in JAVA/C++Master System DesignMaster CPGeeksforGeeks VideosGeeks CommunityLanguagesPythonJavaC++PHPGoLangSQLR LanguageAndroid TutorialDSAData StructuresAlgorithmsDSA for BeginnersBasic DSA ProblemsDSA RoadmapDSA Interview QuestionsCompetitive ProgrammingData Science &amp; MLData Science With PythonData Science For BeginnerMachine LearningML MathsData VisualisationPandasNumPyNLPDeep LearningWeb TechnologiesHTMLCSSJavaScriptTypeScriptReactJSNextJSNodeJsBootstrapTailwind CSSPython TutorialPython Programming ExamplesDjango TutorialPython ProjectsPython TkinterWeb ScrapingOpenCV TutorialPython Interview QuestionComputer ScienceGATE CS NotesOperating SystemsComputer NetworkDatabase Management SystemSoftware EngineeringDigital Logic DesignEngineering MathsDevOpsGitAWSDockerKubernetesAzureGCPDevOps RoadmapSystem DesignHigh Level DesignLow Level DesignUML DiagramsInterview GuideDesign PatternsOOADSystem Design BootcampInterview QuestionsSchool SubjectsMathematicsPhysicsChemistryBiologySocial ScienceEnglish GrammarCommerceAccountancyBusiness StudiesEconomicsManagementHR ManagementFinanceIncome TaxDatabasesSQLMYSQLPostgreSQLPL/SQLMongoDBPreparation CornerCompany-Wise Recruitment ProcessResume TemplatesAptitude PreparationPuzzlesCompany-Wise PreparationCompaniesCollegesCompetitive ExamsJEE AdvancedUGC NETUPSCSSC CGLSBI POSBI ClerkIBPS POIBPS ClerkMore TutorialsSoftware DevelopmentSoftware TestingProduct ManagementProject ManagementLinuxExcelAll Cheat SheetsRecent ArticlesFree Online ToolsTyping TestImage EditorCode FormattersCode ConvertersCurrency ConverterRandom Number GeneratorRandom Password GeneratorWrite &amp; EarnWrite an ArticleImprove an ArticlePick Topics to WriteShare your ExperiencesInternshipsDSA/PlacementsDSA - Self Paced CourseDSA in JavaScript - Self Paced CourseDSA in Python - Self PacedC Programming Course Online - Learn C with Data StructuresComplete Interview PreparationMaster Competitive ProgrammingCore CS Subject for Interview PreparationMastering System Design: LLD to HLDTech Interview 101 - From DSA to System Design [LIVE]DSA to Development [HYBRID]Placement Preparation Crash Course [LIVE]Development/TestingJavaScript Full CourseReact JS CourseReact Native CourseDjango Web Development CourseComplete Bootstrap CourseFull Stack Development - [LIVE]JAVA Backend Development - [LIVE]Complete Software Testing Course [LIVE]Android Mastery with Kotlin [LIVE]Machine Learning/Data ScienceComplete Machine Learning &amp; Data Science Program - [LIVE]Data Analytics Training using Excel, SQL, Python &amp; PowerBI - [LIVE]Data Science Training Program - [LIVE]Mastering Generative AI and ChatGPTProgramming LanguagesC Programming with Data StructuresC++ Programming CourseJava Programming CoursePython Full CourseClouds/DevopsDevOps EngineeringAWS Solutions Architect CertificationSalesforce Certified Administrator CourseGATEGATE CS &amp; IT Test Series - 2025GATE DA Test Series 2025GATE CS &amp; IT Course - 2025GATE DA Course 2025
+:root{
+--home-jobs-section-jf-logo: url('https://media.geeksforgeeks.org/auth-dashboard-uploads/JobFair2024Logo.svg');
+}
+body[data-dark-mode="true"]
+{
+--home-jobs-section-jf-logo: url('https://media.geeksforgeeks.org/auth-dashboard-uploads/JobFair2024LogoDark.svg');
+}
+.hp_job_section_jf_logo, .job-a-thon-jf-sticky-header-logo{
+background: var(--home-jobs-section-jf-logo);
+height: 50px;
+background-repeat: no-repeat;
+width: 105px;
+background-size: 100px;
+}
+@keyframes challenge {
+0%{
+transform: scale(1);
+}
+50%{
+transform: scale(1.03);
+}
+100%{
+transform: scale(1);
+}
+}
+.job-a-thon-jf-sticky-header-logo{
+height: 45px;
+}
+@GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved
+jQuery(document).ready(function($) { RESPONSIVEUI.responsiveTabs(); })
+We use cookies to ensure you have the best browsing experience on our website. By using our site, you
+acknowledge that you have read and understood our
+Cookie Policy &amp;
+Privacy Policy
+Got It !
+--
+if(post_slug.includes('premium-plans-payment/') || post_slug.includes('premium-plans/')){
+$('.darkMode-wrap').remove();
+$('.toggle-darkMode').remove();
+}
+function setGoogleRecaptcha() {
+var captchaSiteKey = '6LdMFNUZAAAAAIuRtzg0piOT-qXCbDF-iQiUi9KY';
+grecaptcha.ready(function() {
+grecaptcha.execute(captchaSiteKey).then(function(token) {
+document.getElementById('g-recaptcha-response-suggestion-form').value = token;
+suggestionCall();
+});
+});
+}
+Improvement
+Suggest changes
+Suggest Changes
+Help us improve. Share your suggestions to enhance the article. Contribute your expertise and make a difference in the GeeksforGeeks portal.
+Create Improvement
+Enhance the article with your expertise. Contribute to the GeeksforGeeks community and help create better learning resources for all.
+Suggest Changes
+min 4 words, max CharLimit:2000
+var lockedCasesHtml = `You can suggest the changes for now and it will be under 'My Suggestions' Tab on Write.You will be notified via email once the article is available for improvement. Thank you for your valuable feedback!`;
+var badgesRequiredHtml = `It seems that you do not meet the eligibility criteria to create improvements for this article, as only users who have earned specific badges are permitted to do so.However, you can still create improvements through the Pick for Improvement section.`;
+jQuery('.improve-header-sec-child').on('click', function(){
+jQuery('.improve-modal--overlay').hide();
+$('.improve-modal--suggestion').hide();
+});
+$('.suggest-change_wrapper, .locked-status--impove-modal .improve-bottom-btn').on('click',function(){ // when suggest changes option is clicked
+$('#suggestion-section-textarea').val("");
+$('.suggest-bottom-btn').html("Suggest changes");
+$('.improve-modal--improvement').hide();
+$('.improve-modal--suggestion').show();
+});
+$('.create-improvement_wrapper').on('click',function(){  // when create improvement option clicked then improvement reason will be shown
+if(loginData && loginData.isLoggedIn) {
+$('body').append('');
+$('.spinner-loading-overlay').show();
+jQuery.ajax({
+url: writeApiUrl + 'create-improvement-post/?v=1',
+type: "POST",
+contentType: 'application/json; charset=utf-8',
+dataType: 'json',
+xhrFields: {
+withCredentials: true
+},
+data: JSON.stringify({
+gfg_id: post_id
+}),
+success:function(result) {
+$('.spinner-loading-overlay:eq(0)').remove();
+$('.improve-modal--overlay').hide();
+$('.unlocked-status--improve-modal-content').css("display","none");
+$('.create-improvement-redirection-to-write').attr('href',writeUrl + 'improve-post/' + `${result.id}` + '/', '_blank');
+$('.create-improvement-redirection-to-write')[0].click();
+},
+error:function(e) {
+showErrorMessage(e.responseJSON,e.status)
+},
+});
+}
+else {
+if(loginData && !loginData.isLoggedIn) {
+$('.improve-modal--overlay').hide();
+if ($('.header-main__wrapper').find('.header-main__signup.login-modal-btn').length) {
+$('.header-main__wrapper').find('.header-main__signup.login-modal-btn').click();
+}
+return;
+}
+}
+});
+$('.left-arrow-icon_wrapper').on('click',function(){
+if($('.improve-modal--suggestion').is(":visible"))
+$('.improve-modal--suggestion').hide();
+else{
+}
+$('.improve-modal--improvement').show();
+});
+const showErrorMessage = (result,statusCode) = {
+if(!result)
+return;
+$('.spinner-loading-overlay:eq(0)').remove();
+if(statusCode == 403) {
+$('.improve-modal--improve-content.error-message').html(result.message);
+jQuery('.improve-modal--overlay').show();
+jQuery('.improve-modal--improvement').show();
+$('.locked-status--impove-modal').css("display","block");
+$('.unlocked-status--improve-modal-content').css("display","none");
+$('.improve-modal--improvement').attr("status","locked");
+return;
+}
+}
+function loadScript(src, callback) {
+var script = document.createElement('script');
+script.src = src;
+script.onload = callback;
+document.head.appendChild(script);
+}
+function suggestionCall() {
+var suggest_val = $.trim($("#suggestion-section-textarea").val());
+var array_String= suggest_val.split(" ")
+var gCaptchaToken = $("#g-recaptcha-response-suggestion-form").val();
+var error_msg = false;
+if(suggest_val != "" && array_String.length =4){
+if(suggest_val.length ${suggest_val}`,
+}
+if(!loginData || !loginData.isLoggedIn)                  // User is not logged in
+payload["g-recaptcha-token"] = gCaptchaToken
+jQuery.ajax({
+type:'post',
+url:  "https://apiwrite.geeksforgeeks.org/suggestions/auth/create/",
+xhrFields: {
+withCredentials: true
+},
+crossDomain: true,
+contentType:'application/json',
+data: JSON.stringify(payload),
+success:function(data) {
+jQuery('.spinner-loading-overlay:eq(0)').remove();
+jQuery('#suggestion-section-textarea').val("");
+jQuery('.suggest-bottom-btn').css("display","none");
+// Update the modal content
+const modalSection = document.querySelector('.suggestion-modal-section');
+modalSection.innerHTML = `
+Thank You!
+Your suggestions are valuable to us.
+`;
+},
+error:function(data) {
+jQuery('.spinner-loading-overlay:eq(0)').remove();
+jQuery('#suggestion-modal-alert').html("Something went wrong.");
+jQuery('#suggestion-modal-alert').show();
+error_msg = true;
+}
+});
+}
+else{
+jQuery('.spinner-loading-overlay:eq(0)').remove();
+jQuery('#suggestion-modal-alert').html("Minimum 5 Words and Maximum Character limit is 2000.");
+jQuery('#suggestion-modal-alert').show();
+jQuery('#suggestion-section-textarea').focus();
+error_msg = true;
+}
+}
+else{
+jQuery('.spinner-loading-overlay:eq(0)').remove();
+jQuery('#suggestion-modal-alert').html("Enter atleast four words !");
+jQuery('#suggestion-modal-alert').show();
+jQuery('#suggestion-section-textarea').focus();
+error_msg = true;
+}
+if(error_msg){
+setTimeout(() = {
+jQuery('#suggestion-section-textarea').focus();
+jQuery('#suggestion-modal-alert').hide();
+}, 3000);
+}
+}
+document.querySelector('.suggest-bottom-btn').addEventListener('click', function(){
+jQuery('body').append('');
+jQuery('.spinner-loading-overlay').show();
+if(loginData && loginData.isLoggedIn) {
+suggestionCall();
+return;
+}
+// load the captcha script and set the token
+loadScript('https://www.google.com/recaptcha/api.js?render=6LdMFNUZAAAAAIuRtzg0piOT-qXCbDF-iQiUi9KY',[], function() {
+setGoogleRecaptcha();
+});
+});
+$('.improvement-bottom-btn.create-improvement-btn').click(function() {  //create improvement button is clicked
+$('body').append('');
+$('.spinner-loading-overlay').show();
+// send this option via create-improvement-post api
+jQuery.ajax({
+url: writeApiUrl + 'create-improvement-post/?v=1',
+type: "POST",
+contentType: 'application/json; charset=utf-8',
+dataType: 'json',
+xhrFields: {
+withCredentials: true
+},
+data: JSON.stringify({
+gfg_id: post_id
+}),
+success:function(result) {
+$('.spinner-loading-overlay:eq(0)').remove();
+$('.improve-modal--overlay').hide();
+$('.create-improvement-redirection-to-write').attr('href',writeUrl + 'improve-post/' + `${result.id}` + '/', '_blank');
+$('.create-improvement-redirection-to-write')[0].click();
+},
+error:function(e) {
+showErrorMessage(e.responseJSON,e.status);
+},
+});
+});
+var AdblockPlus = new function() {
+this.detect = function(px, callback) {
+var detected = false;
+var checksRemain = 2;
+var error1 = false;
+var error2 = false;
+if (typeof callback != "function") return;
+px += "?ch=*&rn=*";
+function beforeCheck(callback, timeout) {
+if (checksRemain == 0 || timeout  1E3) callback(checksRemain == 0 && detected);
+else setTimeout(function() {
+beforeCheck(callback, timeout * 2)
+}, timeout * 2)
+}
+function checkImages() {
+if (--checksRemain) return;
+detected = !error1 && error2
+}
+var random = Math.random() * 11;
+var img1 = new Image;
+img1.onload = checkImages;
+img1.onerror = function() {
+error1 = true;
+checkImages()
+};
+img1.src = px.replace(/\*/, 1).replace(/\*/, random);
+var img2 = new Image;
+img2.onload = checkImages;
+img2.onerror = function() {
+error2 = true;
+checkImages()
+};
+img2.src = px.replace(/\*/, 2).replace(/\*/, random);
+beforeCheck(callback, 250)
+}
+};
+/*
+AdblockPlus.detect("https://cdnads.geeksforgeeks.org/res/px.gif", function(abp){
+window.googletag = window.googletag || {cmd: []};
+window.abp=abp;
+var elms = [...document.querySelectorAll('div[id^=_GFG_ABP_]')];
+const units=elms.map(elem=elem.id)
+if(abp) {
+for(let curr_unit of units) {
+const iframe = document.createElement('iframe');
+iframe.setAttribute('src',"https://aa.geeksforgeeks.org/iframe.html?code="+curr_unit.substr(1))
+const elem = document.getElementById(curr_unit)
+const div = document.createElement('div');
+div.setAttribute('id',curr_unit.substr(1))
+let sizes = curr_unit.split("_");
+sizes = sizes.filter(val = val.includes('x'));
+let [width, height] = sizes[0].split("x");
+iframe.style.width = `${+width+20}px`
+iframe.style.height = `${+height+20}px`
+if(elem) {
+elem.appendChild(iframe);
+}
+}
+var gfgAdDivs = [...document.querySelectorAll('div[id^=GFG_AD_]')];
+gfgAdDivs.forEach(gfgDiv = document.getElementById(gfgDiv.id).removeAttribute("style"));
+jQuery('#secondary .widget_text:last-child').css({"position": "unset"});
+}
+});*/
+AdblockPlus.detect("https://cdnads.geeksforgeeks.org/res/px.gif", function(abp){
+window.googletag = window.googletag || {cmd: []};
+window.abp=abp;
+var elms = [...document.querySelectorAll('div[id^=_GFG_ABP_]')];
+//const units=elms.map(elem=elem.id)
+const units = elms
+.filter(elem = !(window.innerWidth  elem.id);
+if(abp) {
+isAdBlockerPresent = true;
+for(let curr_unit of units) {
+const iframe = document.createElement('iframe');
+iframe.addEventListener("load", () = {
+iframe.contentWindow.postMessage(JSON.stringify({host: window.location.host,category: window.arrPostCatName,parentWidth: window.innerWidth}),'https://aa.geeksforgeeks.org');
+});
+iframe.setAttribute('src',"https://aa.geeksforgeeks.org/iframe.html?code="+curr_unit.substr(1))
+const elem = document.getElementById(curr_unit)
+const div = document.createElement('div');
+div.setAttribute('id',curr_unit.substr(1))
+let sizes = curr_unit.split("_");
+sizes = sizes.filter(val = val.includes('x'));
+let [width, height] = sizes[0].split("x");
+iframe.style.width = `${+width+20}px`
+iframe.style.height = `${+height+20}px`
+if(elem) {
+elem.appendChild(iframe);
+}
+}
+var gfgAdDivs = [...document.querySelectorAll('div[id^=GFG_AD_]')];
+gfgAdDivs.forEach(gfgDiv = document.getElementById(gfgDiv.id).removeAttribute("style"));
+jQuery('#secondary .widget_text:last-child').css({"position": "unset"});
+}
+else{
+try {
+var isAdblockEnabled = t =
+fetch(
+new Request('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', {
+method: 'HEAD',
+mode: 'no-cors'
+})
+).catch(t);
+isAdblockEnabled(() = {
+// here goes modal pop-up code
+isAdBlockerPresent = true;
+});
+} catch (err) {console.log(err);}
+}
+});
+function closeAdBlockPopupModal(){
+const modal = document.getElementById("adBlockerModal");
+$('body').removeClass('body-for-ad-blocker');
+$('#adBlockerModal').remove()
+localStorage.setItem('gfgAdBlockPopup',new Date())
+}
+function showAdblockerModal(){
+let randomNumberForButtonText = Math.round(Math.random());
+let currTime = new Date();
+let lastTime = new Date(localStorage.getItem('gfgAdBlockPopup'));
+if(((currTime-lastTime)/(1000*60*60))
+It seems that you are using an ad blocker.Please disable it to support us!
+I disabled my ad blocker
+${randomNumberForButtonText === 1 ? "Go Ad-Free with Premium" : "Upgrade for No Ads"}
+"For an ad-free experience and exclusive features, subscribe to our Premium Plan!"
+Continue without supporting
+`;
+$('body').append(adBlockerModal);
+$('body').addClass('body-for-ad-blocker');
+const modal = document.getElementById("adBlockerModal");
+modal.style.display = "block";
+}
+function handleAdBlockerClick(type){
+if(type == 'disabled'){
+window.location.reload();
+}
+else if(type == 'info'){
+document.getElementById("ad-blocker-div").style.display = "none";
+document.getElementById("ad-blocker-info-div").style.display = "flex";
+handleAdBlockerIconClick(0);
+}
+}
+var lastSelected= null;
+//Mapping of name and video URL with the index.
+const adBlockerVideoMap = [
+['Ad Block Plus','https://media.geeksforgeeks.org/auth-dashboard-uploads/abp-blocker-min.mp4'],
+['Ad Block','https://media.geeksforgeeks.org/auth-dashboard-uploads/Ad-block-min.mp4'],
+['uBlock Origin','https://media.geeksforgeeks.org/auth-dashboard-uploads/ub-blocke-min.mp4'],
+['uBlock','https://media.geeksforgeeks.org/auth-dashboard-uploads/U-blocker-min.mp4'],
+]
+function handleAdBlockerIconClick(currSelected){
+const videocontainer = document.getElementById('ad-blocker-info-div-gif');
+const videosource = document.getElementById('ad-blocker-info-div-gif-src');
+if(lastSelected != null){
+document.getElementById("ad-blocker-info-div-icons-"+lastSelected).style.backgroundColor = "white";
+document.getElementById("ad-blocker-info-div-icons-"+lastSelected).style.borderColor = "#D6D6D6";
+}
+document.getElementById("ad-blocker-info-div-icons-"+currSelected).style.backgroundColor = "#D9D9D9";
+document.getElementById("ad-blocker-info-div-icons-"+currSelected).style.borderColor = "#848484";
+document.getElementById('ad-blocker-info-div-name-span').innerHTML = adBlockerVideoMap[currSelected][0]
+videocontainer.pause();
+videosource.setAttribute('src', adBlockerVideoMap[currSelected][1]);
+videocontainer.load();
+videocontainer.play();
+lastSelected = currSelected;
+}
+--
+/* Temporary CSS for Three90 pop up modal (START)*/
+.three90popup__container {
+width: 100vw;
+height: 100vh;
+position: fixed;
+top:0px;
+background: var(--job-tab-faded-background);
+z-index: 1024;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.three90modal__wrapper{
+background-color: white;
+max-width: 350px;
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+overflow: hidden;
+}
+.three90modal__message-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: var(--font-primary);
+}
+.three90modal__subheading {
+margin-top: 20px;
+font-size: 22px;
+font-weight: 600;
+}
+.three90modal__text-message {
+margin-top: 20px;
+font-size: 15px;
+font-weight: 400;
+text-align: center;
+padding: 0 5px;
+}
+.three90__modal__button-wrapper {
+width: 100%;
+padding: 20px 0px;
+display: flex;
+justify-content: space-evenly;
+}
+.three90__modal__button-wrapper  button {
+width: 105px;
+height: 35px;
+border-radius: 13px;
+border:none;
+font-weight: 600;
+cursor: pointer;
+}
+#three90__modal-close-btn:hover {
+background-color: #cacbcd;
+}
+#three90__modal-explore-btn {
+background-color: #0a0727;
+color: white
+}
+@media screen and (max-width: 441px) {
+.three90modal__wrapper {
+max-width: 300px;
+}
+}
+/* Temporary CSS for Three90 pop up modal (END)*/
+const coursePromotionCities = JSON.parse(`{"NCR":{"LOCATIONS":["Noida","Greater Noida","Ghaziabad","Faridabad","Delhi","New Delhi"],"COURSES":[{"name":"GATE CS 2025 Classroom Program","url":"https:\/\/www.geeksforgeeks.org\/courses\/gate-cs-self-paced"},{"name":"MERN Full Stack Development","url":"https:\/\/www.geeksforgeeks.org\/courses\/mern-full-stack-development-classroom"},{"name":"DSA For Interview Preparation","url":" https:\/\/www.geeksforgeeks.org\/courses\/dsa-interview-preparation-classroom"},{"name":"JAVA Backend Development","url":"https:\/\/www.geeksforgeeks.org\/courses\/complete-java-backend-development-program"},{"name":"Data Analytics Programme","url":"https:\/\/www.geeksforgeeks.org\/courses\/complete-data-analytics-program"},{"name":"AWS Solutions Architect Certification","url":"https:\/\/www.geeksforgeeks.org\/courses\/aws-solutions-architect-certification-classroom-training"},{"name":"Explore All","url":"https:\/\/www.geeksforgeeks.org\/courses\/offline-courses"}]},"NON_NCR":{"Bengaluru":[{"name":"Data Science Classroom Program","url":"https:\/\/www.geeksforgeeks.org\/courses\/data-science-classroom-program"},{"name":"System Design Classroom Program","url":"https:\/\/www.geeksforgeeks.org\/courses\/system-design-classroom-program"},{"name":"MERN Full Stack Development","url":"https:\/\/www.geeksforgeeks.org\/courses\/mern-full-stack-development-classroom"},{"name":"DSA For Interview Preparation","url":"https:\/\/www.geeksforgeeks.org\/courses\/dsa-interview-preparation-classroom"},{"name":"JAVA Backend Development","url":"https:\/\/www.geeksforgeeks.org\/courses\/complete-java-backend-development-program"},{"name":"Data Analytics Programme","url":"https:\/\/www.geeksforgeeks.org\/courses\/complete-data-analytics-program"},{"name":"AWS Solutions Architect Certification","url":"https:\/\/www.geeksforgeeks.org\/courses\/aws-solutions-architect-certification-classroom-training"},{"name":"Explore All","url":"https:\/\/www.geeksforgeeks.org\/courses\/offline-courses"}],"Pune":[{"name":"MERN Full Stack Development","url":"https:\/\/www.geeksforgeeks.org\/courses\/mern-full-stack-development-classroom"},{"name":"DSA For Interview Preparation","url":"https:\/\/www.geeksforgeeks.org\/courses\/dsa-interview-preparation-classroom"},{"name":"Complete Data Analytics Program","url":"https:\/\/www.geeksforgeeks.org\/courses\/complete-data-analytics-program"},{"name":"Explore All","url":"https:\/\/www.geeksforgeeks.org\/courses\/offline-courses"}]}}`);
+const offlineCourseTermMapper = JSON.parse(`{"ALL_TERMIDS":["2058","6263","2628","1745","1789","2601","2057","5037","2971","2023","2162","2795"],"COURSE_TERMID_MAP":{"JAVA":["2058"],"DATA_ANALYTICS":["1745","1789","2601","2057","5037","2971","2023","2162","2795"],"DSA":["6263"],"MERN":["2628"]}}`);
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KDVRCT5');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+//  gtag('config', 'AW-474915276');
+gtag('config', 'G-DWCCJLKX3X');
+gtag('config', 'AW-796001856');
+--
+:root {
+--com-extra-icons-mobile-image: url(https://media.geeksforgeeks.org/auth-dashboard-uploads/Com-Extra-Icons13.svg);
+--write-experience-card-1: #ECF5F5;
+--write-experience-card-icon-1: #21898C;
+--write-experience-card-2: #EAF2F7;
+--write-experience-card-icon-2: #3079AC;
+--write-experience-card-3: #FDEFE6;
+--write-experience-card-icon-3: #F5A572;
+--write-experience-card-4: #F1F8F5;
+--write-experience-card-icon-4: #91C4AD;
+--write-experience-card-5: #EEE7FF;
+--write-experience-card-icon-5: #8B72C9;
+--write-experience-card-6: #F2F8E6;
+--write-experience-card-icon-6: #78C57F;
+--editor-button-text-color: #6E6E73;
+--write-modal-background: #fefefe;
+--experience-sidebar: #000;
+--left-bar-background: #FFFFFF;
+--write-redirect-container:#EAF2F7;
+--write-redirect-container-hover:#d6e7f2;
+}
+/* Dark Mode */
+body[data-dark-mode="true"] {
+--write-modal-background: #161c23;
+--experience-sidebar: #000;
+--left-bar-background: #F0F3F5;
+}
+.popup-main {
+padding: 20px 18px 20px 18px;
+border-radius: 8px;
+}
+.popup-main .popup-heading {
+display: flex;
+align-items: center;
+color: #E9E9EA;
+margin-bottom: 10px;
+justify-content: space-between;
+}
+.popup-main .close-icon {
+background-image: var(--com-extra-icons-mobile-image);background-position: -15px -1651px;height: 22px;width: 22px;transform: scale(1);
+margin-bottom: 12px;
+cursor: pointer;
+}
+.popup-main .experience-card {
+color: #000;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 16px;
+/* margin-bottom:10px; */
+}
+.popup-main a:hover,
+.popup-main a:active,
+.popup-main a:visited {
+color: inherit;
+text-decoration: none;
+}
+.popup-main .exp-card1,
+.popup-main .exp-card2,
+.popup-main .exp-card3,
+.popup-main .exp-card4,
+.popup-main .exp-card5,
+.popup-main .exp-card6 {
+display: flex;
+align-items: center;
+border-radius: 10px;
+cursor: pointer;
+}
+.popup-main .exp-card1 .icon1,
+.popup-main .exp-card2 .icon2,
+.popup-main .exp-card3 .icon3,
+.popup-main .exp-card4 .icon4,
+.popup-main .exp-card5 .icon5,
+.popup-main .exp-card6 .icon6 {
+width: 80px;
+height: 80px;
+border-radius: 10px 0px 0px 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: var(--write-experience-card-icon-1);
+}
+.popup-main .exp-card1 .icon1,
+.popup-main .exp-card2 .icon2,
+.popup-main .exp-card3 .icon3,
+.popup-main .exp-card4 .icon4,
+.popup-main .exp-card5 .icon5,
+.popup-main .exp-card6 .icon6 {
+width: 80px;
+height: 80px;
+border-radius: 10px 0px 0px 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.popup-main .exp-card1 .icon1 {
+background: var(--write-experience-card-icon-1);
+}
+.popup-main .exp-card2 .icon2 {
+background: var(--write-experience-card-icon-2);
+}
+.popup-main .exp-card3 .icon3 {
+background: var(--write-experience-card-icon-3);
+}
+.popup-main .exp-card4 .icon4 {
+background: var(--write-experience-card-icon-4);
+}
+.popup-main .exp-card5 .icon5 {
+background: var(--write-experience-card-icon-5);
+}
+.popup-main .exp-card6 .icon6 {
+background: var(--write-experience-card-icon-6);
+}
+.popup-main .exp-card6 .icon6-image {
+background-image: url(https://media.geeksforgeeks.org/auth-dashboard-uploads/compass.svg);
+width: 46px;
+height: 30px;
+background-size: 30px;
+background-repeat: no-repeat;
+background-position: center;
+}
+.popup-main .exp-card1 .icon1-image {
+background-image: var(--com-extra-icons-mobile-image);
+width: 46px;
+height: 28px;
+background-position: -4px -812px;
+}
+.popup-main .exp-card2 .icon2-image {
+background-image: var(--com-extra-icons-mobile-image);
+width: 46px;
+height: 28px;
+background-position: -4px -888px;
+}
+.popup-main .exp-card3 .icon3-image {
+background-image: var(--com-extra-icons-mobile-image);
+width: 46px;
+height: 28px;
+background-position: -4px -848px;
+}
+.popup-main .exp-card4 .icon4-image {
+background-image: url(https://media.geeksforgeeks.org/auth-dashboard-uploads/competitive.svg);
+width: 46px;
+height: 30px;
+background-size: 30px;
+background-repeat: no-repeat;
+background-position: center;
+}
+.popup-main .exp-card5 .icon5-image {
+background-image: var(--com-extra-icons-mobile-image);
+width: 46px;
+height: 33px;
+background-position: -4px -1217px;
+}
+.popup-main .exp-card1 .exp-card1-text,
+.popup-main .exp-card2 .exp-card2-text,
+.popup-main .exp-card3 .exp-card3-text,
+.popup-main .exp-card4 .exp-card4-text,
+.popup-main .exp-card5 .exp-card5-text,
+.popup-main .exp-card6 .exp-card6-text {
+display: flex;
+align-items: center;
+border-radius: 0px 10px 10px 0px;
+height: 80px;
+width: calc(100% - 80px);
+}
+.popup-main .exp-card1 {
+justify-content: flex-start;
+background: var(--write-experience-card-1);
+}
+.popup-main .exp-card2 {
+justify-content: flex-start;
+background: var(--write-experience-card-2);
+}
+.popup-main .exp-card3 {
+justify-content: flex-start;
+background: var(--write-experience-card-3);
+}
+.popup-main .exp-card4 {
+justify-content: flex-start;
+background: var(--write-experience-card-4);
+}
+.popup-main .exp-card5 {
+justify-content: flex-start;
+background: var(--write-experience-card-5);
+}
+.popup-main .exp-card6 {
+justify-content: flex-start;
+background: var(--write-experience-card-6);
+}
+.popup-main span {
+font-family: var(--font-primary);
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-left: 5px;
+padding-right: 5px;
+}
+#popup {
+display: none;
+background-color: var(--write-modal-background);
+padding: 20px;
+text-align: center;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1026;
+width: min(650px, calc(100% - 20px));
+}
+.link-container-write{
+display:flex;
+flex-direction:column;
+}
+.link-container-write  a {
+margin:7px 0px;
+}
+.phrase__container{
+color:var(--color-gfg);
+border-radius: 6px;
+width: 100%;
+background-color:var(--write-redirect-container);
+padding: 15px;
+text-align: justify;
+font-size:14px;
+}
+.phrase__container:hover {
+color:var(--color-gfg) !important;
+background-color:var(--write-redirect-container-hover);
+}
+What kind of Experience do you want to share?
+Tell us your type of experiences which can help other fellow Geeks for their future events and preparations. --
+Interview Experiences
+Admission Experiences
+Career Journeys
+Work Experiences
+Campus Experiences
+Competitive Exam Experiences
+Can't choose a topic to write? click here for suggested topics
+Write and publish your own Article
+--
+$('.share-experience-modal').click(function(e){
+e.preventDefault();
+var link = $(this).attr('href');
+toggleExperiencePopup(link);
+});
+function toggleExperiencePopup(link) {
+var popup = document.getElementById("popup");
+var overlay = document.getElementById("overlay");
+if (window.innerWidth
+$(window).on('load', function() {
+(function(c,l,a,r,i,t,y){
+c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "ayc7ypwwuk");
+});
+linked-list 9172 - AI-ML-DS, 1789 - python  4667 - math)  --
